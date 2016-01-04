@@ -23,6 +23,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 })
 
+.controller('TodoCtrl', function($scope) {
+  $scope.tasks = [
+    { title: 'Collect coins' },
+    { title: 'Eat mushrooms' },
+    { title: 'Get high enough to grab the flag' },
+    { title: 'Find the Princess' }
+  ];
+})
+
 .config(function($stateProvider, $urlRouterProvider) {
 
   // Ionic uses AngularUI Router which uses the concept of states
