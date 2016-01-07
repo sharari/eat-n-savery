@@ -31,44 +31,37 @@
 
     <!-- Center content -->
     <ion-side-menu-content>
-      <ion-header-bar class="bar-dark">
-		<div class="tabs-striped tabs-top tabs-background-positive tabs-color-light">
-			<div class="bar bar-header has-tabs-top bar-positive">
-				<h1 class="title">Discounts</h1>
-				<!-- New Task button-->
-				  <button class="button button-icon" ng-click="newTask()">
-					<i class="icon ion-home"></i>
-				  </button>
-			</div>
 
+	  <ion-tabs class="tabs-positive tabs-icon-top">
 
-			<div class="tabs tabs-icon-top">
-			  <a class="tab-item">
-				<i class="icon ion-star"></i>
-				Time-Sensitive
-			  </a>
-			  <a class="tab-item">
-				<i class="icon ion-gear-a"></i>
-				Permanent
-			  </a>
-			</div>
-		</div>
-					
-		</ion-header-bar>
-		
-		
-		
-		
-	  <ion-content>
-	  
-	  
-		<!-- our list and list items -->
+  <ion-tab title="Home" icon-on="ion-ios-home" icon-off="ion-ios-home-outline">
+    <h1> HOME </h1>
+  </ion-tab>
+
+  <ion-tab title="Time-Sensitive" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
 		<ion-list>
 		  <ion-item ng-repeat="task in tasks">
-			{{task.title}}
+			<div class="left">
+				<h3>{{task.title}}</h3>
+			</div>
+			<div class="right">
+				<p>20% off</p>
+				<p>Until 9pm</p>
+			</div>
 		  </ion-item>
 		</ion-list>
-	  </ion-content>
+		</ion-tab>
+
+  <ion-tab title="Permanent" icon-on="ion-ios-gear" icon-off="ion-ios-gear-outline">
+		<ion-list>
+		  <ion-item ng-repeat="task2 in tasks2">
+			{{task2.title}}
+		  </ion-item>
+		</ion-list>
+	</ion-tab>
+
+</ion-tabs>
+	  
     </ion-side-menu-content>
 
     <!-- Left menu -->

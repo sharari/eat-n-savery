@@ -25,10 +25,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .controller('TodoCtrl', function($scope) {
   $scope.tasks = [
-    { title: 'Collect coins' },
-    { title: 'Eat mushrooms' },
-    { title: 'Get high enough to grab the flag' },
-    { title: 'Find the Princess' }
+    { title: 'Restaurant #1' },
+    { title: 'Restaurant #2' },
+    { title: 'Restaurant #3' },
+    { title: 'Restaurant #4' }
+  ];
+  $scope.tasks2 = [
+    { title: 'Restaurant #A' },
+    { title: 'Restaurant #B' },
+    { title: 'Restaurant #C' },
+    { title: 'Restaurant #D' }
   ];
 })
 
