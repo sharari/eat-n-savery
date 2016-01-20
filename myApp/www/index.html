@@ -26,19 +26,29 @@
     <script src="js/services.js"></script>
   </head>
   <body ng-app="starter" ng-controller="TodoCtrl">
-  
-  <ion-side-menus>
+	<ion-header-bar  class="bar bar-header bar-energized">
+		<h1 class="title">EAT & $AVE-RY</h1>
+	</ion-header-bar>
+	
+	<ion-side-menus>
 
     <!-- Center content -->
     <ion-side-menu-content>
+		<!--<ion-scroll direction="y" style="height:800px; min-height: 700px; overflow: scroll; white-space: nowrap;">-->
 
 	  <ion-tabs class="tabs-positive tabs-icon-top">
 
   <ion-tab title="Time-Sensitive" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+<<<<<<< HEAD
     <h1>time-sensitive</h1>
     <!--<ion-list>
       <ion-item ng-repeat="task in tasks">
+=======
+    <ion-list>
+      <ion-item ng-repeat="task in tasks" style="border-style: solid;border-color: black;	border-width: 10px 0 0 0;">
+>>>>>>> origin/master
       <div class="left">
+	  <img src="{{task.imageurl}}" class="image-main" style="height:200px; width:100%;" >
         <h3>{{task.title}}</h3>
       </div>
       <div class="right">
@@ -49,6 +59,7 @@
     </ion-list>-->
   </ion-tab>
 
+<<<<<<< HEAD
   <ion-tab title="Permanent" icon-on="ion-ios-nutrition" icon-off="ion-ios-nutrition-outline">
     <!--<h1>Permanent</h1>-->
 		<ion-list>
@@ -65,16 +76,25 @@
 		</ion-tab>
 
   <ion-tab title="Become a Partner" icon-on="ion-ios-people" icon-off="ion-ios-people-outline">
+=======
+	<ion-tab title="Permanent" icon-on="ion-ios-nutrition" icon-off="ion-ios-nutrition-outline">
+>>>>>>> origin/master
 		<ion-list>
 		  <ion-item ng-repeat="task2 in tasks2">
 			{{task2.title}}
 		  </ion-item>
 		</ion-list>
 	</ion-tab>
-
+	<ion-tab 
+		title="Become a Partner" 
+		href="../user.html"
+		icon-on="ion-ios-people" 
+		icon-off="ion-ios-people-outline">
+	</ion-tab>
 </ion-tabs>
-	  
-    </ion-side-menu-content>
+	  		<!--</ion-scroll>-->
+
+</ion-side-menu-content>
 
     <!-- Left menu -->
     <ion-side-menu side="left">
