@@ -26,9 +26,10 @@
     <script src="js/services.js"></script>
   </head>
   <body ng-app="starter" ng-controller="TodoCtrl">
-	<div class="bar bar-header bar-energized">
+	<ion-header-bar  class="bar bar-header bar-calm">
 		<h1 class="title">EAT & $AVE-RY</h1>
-	</div>
+	</ion-header-bar>
+	
 	<ion-side-menus>
 
     <!-- Center content -->
@@ -40,6 +41,7 @@
     <ion-list>
       <ion-item ng-repeat="task in tasks">
       <div class="left">
+	  <img src="{{task.imageurl}}" class="image-main" style="height:200px; width:100%;" >
         <h3>{{task.title}}</h3>
       </div>
       <div class="right">

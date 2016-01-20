@@ -28,10 +28,60 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
 .controller('TodoCtrl', function($scope) {
   $scope.tasks = [
-    { title: 'Restaurant #1' },
-    { title: 'Restaurant #2' },
-    { title: 'Restaurant #3' },
-    { title: 'Restaurant #4' }
+                    {
+                        "id":1,
+                         "title" : 'Chester Cab Pizza',
+                         "iconoff":'ion-ios-photos',
+                         "iconon":'ion-ios-photos',
+                         "url":'chester',
+                         "tabname":"tab-dash",
+                         "imageurl":"img/restaurants/chester.png"
+                    },
+                    {
+                        "id":2,
+                         "title" : 'Deli Sandros',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/deli1.png"
+                    },
+                    {
+                        "id":3,
+                         "title" : 'Hans',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/hans.png"
+                    },
+                    {
+                        "id":4,
+                         "title" : 'Hogans Hideaway',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/hogans.png"
+                    },
+                    {
+                        "id":5,
+                         "title" : 'Jines Restaurant',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/jines.png"
+                    },
+                    {
+                        "id":6,
+                         "title" : 'Mozzeroni',
+                         "iconoff":'ion-android-star-half',
+                         "iconon":'ion-android-star-half',
+                         "url":'top5',
+                         "tabname":'tab-top5',
+                         "imageurl":"img/restaurants/mozzeroni.png"
+                    }
   ];
   $scope.tasks2 = [
     { title: 'Restaurant #A' },
