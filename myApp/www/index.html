@@ -48,21 +48,7 @@
     </ion-list>
   </ion-tab>
 
-  <ion-tab title="Permanent" icon-on="ion-ios-nutrition" icon-off="ion-ios-nutrition-outline">
-		<ion-list>
-		  <ion-item ng-repeat="task in tasks">
-			<div class="left">
-				<h3>{{task.title}}</h3>
-			</div>
-			<div class="right">
-				<p>20% off</p>
-				<p>Until 9pm</p>
-			</div>
-		  </ion-item>
-		</ion-list>
-		</ion-tab>
-
-  <ion-tab title="Become a Partner" icon-on="ion-ios-people" icon-off="ion-ios-people-outline">
+	<ion-tab title="Permanent" icon-on="ion-ios-nutrition" icon-off="ion-ios-nutrition-outline">
 		<ion-list>
 		  <ion-item ng-repeat="task2 in tasks2">
 			{{task2.title}}
@@ -70,9 +56,18 @@
 		</ion-list>
 	</ion-tab>
 
+	<a href="users.html">
+	<ion-tab title="Become a Partner" icon-on="ion-ios-people" icon-off="ion-ios-people-outline">
+		<ion-list>
+		  <ion-item ng-repeat="task2 in tasks2">
+			{{task2.title}}
+		  </ion-item>
+		</ion-list>
+	</ion-tab>
+	</a>
 </ion-tabs>
 	  
-    </ion-side-menu-content>
+</ion-side-menu-content>
 
     <!-- Left menu -->
     <ion-side-menu side="left">
