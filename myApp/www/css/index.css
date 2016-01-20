@@ -9,8 +9,9 @@
 	float: left;
 }
 .eachitem{
-	border: solid;
-	border-color: blue;
+	border-style: solid;
+	border-color: black;
+	border-width: 20px;
 	background-color: beige;
 }
 .names{
