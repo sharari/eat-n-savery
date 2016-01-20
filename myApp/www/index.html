@@ -26,8 +26,10 @@
     <script src="js/services.js"></script>
   </head>
   <body ng-app="starter" ng-controller="TodoCtrl">
-  
-  <ion-side-menus>
+	<div class="bar bar-header bar-energized">
+		<h1 class="title">EAT & $AVE-RY</h1>
+	</div>
+	<ion-side-menus>
 
     <!-- Center content -->
     <ion-side-menu-content>
@@ -55,16 +57,12 @@
 		  </ion-item>
 		</ion-list>
 	</ion-tab>
-
-	<a href="users.html">
-	<ion-tab title="Become a Partner" icon-on="ion-ios-people" icon-off="ion-ios-people-outline">
-		<ion-list>
-		  <ion-item ng-repeat="task2 in tasks2">
-			{{task2.title}}
-		  </ion-item>
-		</ion-list>
+	<ion-tab 
+		title="Become a Partner" 
+		href="../user.html"
+		icon-on="ion-ios-people" 
+		icon-off="ion-ios-people-outline">
 	</ion-tab>
-	</a>
 </ion-tabs>
 	  
 </ion-side-menu-content>
