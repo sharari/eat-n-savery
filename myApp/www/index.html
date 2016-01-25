@@ -15,7 +15,7 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
-	<script src="js/custom.js"></script>
+  <script src="js/custom.js"></script>
     <script src="js/app.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
@@ -27,23 +27,23 @@
 
   </head>
   <body ng-app="starter" ng-controller="TodoCtrl">
-	<!--<ion-header-bar  class="bar bar-header bar-energized">
-		<h1 class="title">EAT & $AVE-RY</h1>
-	</ion-header-bar>-->
+  <!--<ion-header-bar  class="bar bar-header bar-energized">
+    <h1 class="title">EAT & $AVE-RY</h1>
+  </ion-header-bar>-->
 
   <div class="bar bar-header bar-energized">
     <h1 class="title">EAT & $AVE-RY</h1>
   </div>
-	
+  
   
 
-	<ion-side-menus>
+  <ion-side-menus>
 
     <!-- Center content -->
     <ion-side-menu-content>
-		<!--<ion-scroll direction="y" style="height:800px; min-height: 700px; overflow: scroll; white-space: nowrap;">-->
+    <!--<ion-scroll direction="y" style="height:800px; min-height: 700px; overflow: scroll; white-space: nowrap;">-->
 
-	  <ion-tabs class="tabs-positive tabs-icon-top">
+    <ion-tabs class="tabs-positive tabs-icon-top">
     
 
   <ion-tab title="Time-Sensitive" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
@@ -52,24 +52,24 @@
 
 <!-- HEAD-->
   <ion-tab title="Permanent" icon-on="ion-ios-nutrition" icon-off="ion-ios-nutrition-outline">
-		<ion-list>
-		  <ion-item ng-repeat="task in tasks">
-			<div class="left">
-				<h3>{{task.title}}</h3>
-			</div>
-			<div class="right">
-				<p>20% off</p>
-				<p>Until 9pm</p>
-			</div>
-		  </ion-item>
-		</ion-list>
-		</ion-tab>
+    <ion-list>
+      <ion-item ng-repeat="task in tasks">
+      <div class="left">
+        <h3>{{task.title}}</h3>
+      </div>
+      <div class="right">
+        <p>20% off</p>
+        <p>Until 9pm</p>
+      </div>
+      </ion-item>
+    </ion-list>
+    </ion-tab>
 
-	<ion-tab 
-		title="Become a Partner" 
-		href="../user.html"
-		icon-on="ion-ios-people" 
-		icon-off="ion-ios-people-outline">
+  <ion-tab 
+    title="Become a Partner" 
+    href="../user.html"
+    icon-on="ion-ios-people" 
+    icon-off="ion-ios-people-outline">
 
     <h1>Login with Facebook</h1>
 
@@ -87,9 +87,9 @@
       </button>
     </div>
 
-	</ion-tab>
+  </ion-tab>
 </ion-tabs>
-	  		<!--</ion-scroll>-->
+        <!--</ion-scroll>-->
 
 </ion-side-menu-content>
 
@@ -99,8 +99,8 @@
         <h1 class="title">Projects</h1>
       </ion-header-bar>
     </ion-side-menu>
-	
-	
+  
+  
   </ion-side-menus>
 
 
