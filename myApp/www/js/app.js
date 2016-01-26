@@ -6,12 +6,16 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 //angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', 'ngOpenFB'])
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+//angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
+angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
 
 /*.run(function($ionicPlatform, ngFB) {
   ngFB.init({appId: '1803097819917474'})*/
-.run(function($ionicPlatform) {
-  $ionicPlatform.ready(function() {
+//.run(function($ionicPlatform) {
+ 
+.run(function ($ionicPlatform, ngFB) {
+	ngFB.init({appId: '1803097819917474'});
+ $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
