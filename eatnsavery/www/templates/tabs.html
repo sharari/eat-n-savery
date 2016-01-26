@@ -1,0 +1,61 @@
+	    <ion-tabs class="tabs-positive tabs-icon-top">
+    
+
+  <ion-tab title="Time-Sensitive" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+    <h1>time-sensitive</h1>
+	 <ion-list>
+		<ion-item ng-repeat="task in tasks" style="border-style: solid;border-color: black;	border-width: 10px 0 0 0;">
+
+		<div class="left">
+  	  <img src="{{task.imageurl}}" class="image-main" style="height:200px; width:100%;" >
+          <h3>{{task.title}}</h3>
+		 </div>
+  	</ion-tab>
+
+<!-- HEAD-->
+  <ion-tab title="Permanent" icon-on="ion-ios-nutrition" icon-off="ion-ios-nutrition-outline">
+    <ion-list>
+      <ion-item ng-repeat="task in tasks">
+      <div class="left">
+        <h3>{{task.title}}</h3>
+      </div>
+      <div class="right">
+        <p>20% off</p>
+        <p>Until 9pm</p>
+      </div>
+      </ion-item>
+    </ion-list>
+    </ion-tab>
+
+  <ion-tab 
+    title="Become a Partner" 
+    href="../user.html"
+    icon-on="ion-ios-people" 
+    icon-off="ion-ios-people-outline">
+
+    <h1>Login with Facebook</h1>
+
+	<label class="item">
+    <button class="button button-block button-positive" ng-click="fbLogin()">
+    Login with Facebook
+    </button>
+</label>
+	
+    <div class="list list-inset">
+      <label class="item item-input">
+        <input type="text" placeholder="First Name">
+      </label>
+
+	  
+	  
+      <label class="item item-input">
+        <input type="text" placeholder="Last Name">
+      </label>
+
+      <button class="button button-positive">
+        Submit
+      </button>
+    </div>
+
+  </ion-tab>
+</ion-tabs>

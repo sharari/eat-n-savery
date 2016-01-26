@@ -1,0 +1,28 @@
+.left{
+	text-align: left;
+	width: 50%;
+	float: left;
+}
+.right{
+	text-align: right;
+	width: 50%;
+	float: left;
+}
+.eachitem{
+	border-style: solid;
+	border-color: black;
+	border-width: 20px;
+	background-color: beige;
+}
+.names{
+	font-size: 40px;
+}
+.image-main{
+	width: 800px;
+	height: 6px;
+}
+.left img{
+	width: 800px;
+	height: 6px;
+
+}

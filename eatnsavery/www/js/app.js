@@ -22,7 +22,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
     }
   });
 })
-
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
