@@ -1,1 +1,24 @@
-/* Empty. Add your own CSS if you like */
+.restaurant-list .item-content{
+	padding: 0px 0px 0px 0px;
+	border-style: solid;
+	border-color: black;
+	border-width: 0 0 10px 0;
+	
+	color: white;
+}
+
+.restaurant-list .item-content .restaurant-name{
+	position: absolute;
+	bottom: 0;
+	color: white;
+	padding: 5px;
+	height: 20px;
+	width: 100%;
+	background-color: black;
+}
+
+
+.restaurant-list .restaurant-item{
+	background-size: cover;
+	background-repeat: no-repeat;
+}
