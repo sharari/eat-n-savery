@@ -32,6 +32,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
     controller: 'AppCtrl'
   })
 
+  .state('app.tabs', {
+    url: '/tabs',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/tabs.html'
+      }
+    }
+  })
+
+  .state('app.submit', {
+    url: '/submit',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/submit.html'
+      }
+    }
+  })
+
   .state('app.search', {
     url: '/search',
     views: {
@@ -69,5 +87,5 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app');
 });

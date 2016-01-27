@@ -1,15 +1,13 @@
-	    <ion-tabs class="tabs-positive tabs-icon-top">
-    
+<ion-tabs class="tabs-positive tabs-icon-top">
+	<ion-tab title="Time-Sensitive" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
+		<h1>time-sensitive</h1>
+		 <ion-list>
+			<ion-item ng-repeat="task in tasks" style="border-style: solid;border-color: black;	border-width: 10px 0 0 0;">
 
-  <ion-tab title="Time-Sensitive" icon-on="ion-ios-clock" icon-off="ion-ios-clock-outline">
-    <h1>time-sensitive</h1>
-	 <ion-list>
-		<ion-item ng-repeat="task in tasks" style="border-style: solid;border-color: black;	border-width: 10px 0 0 0;">
-
-		<div class="left">
-  	  <img src="{{task.imageurl}}" class="image-main" style="height:200px; width:100%;" >
-          <h3>{{task.title}}</h3>
-		 </div>
+			<div class="left">
+		  <img src="{{task.imageurl}}" class="image-main" style="height:200px; width:100%;" >
+			  <h3>{{task.title}}</h3>
+			 </div>
   	</ion-tab>
 
 <!-- HEAD-->
