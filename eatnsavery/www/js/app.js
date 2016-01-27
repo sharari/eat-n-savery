@@ -67,25 +67,25 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
         }
       }
     })
-    .state('app.playlists', {
-      url: '/playlists',
+    .state('app.restaurants', {
+      url: '/restaurants',
       views: {
         'menuContent': {
-          templateUrl: 'templates/playlists.html',
-          controller: 'PlaylistsCtrl'
+          templateUrl: 'templates/restaurants.html',
+          controller: 'RestaurantsCtrl'
         }
       }
     })
 
   .state('app.single', {
-    url: '/playlists/:playlistId',
+    url: '/restaurants/:restaurantId',
     views: {
       'menuContent': {
-        templateUrl: 'templates/playlist.html',
-        controller: 'PlaylistCtrl'
+        templateUrl: 'templates/restaurant.html',
+        controller: 'RestaurantCtrl'
       }
     }
   });
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/playlists');
+  $urlRouterProvider.otherwise('/app/restaurants');
 });

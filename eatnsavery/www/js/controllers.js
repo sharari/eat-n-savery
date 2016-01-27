@@ -53,8 +53,8 @@ angular.module('starter.controllers', ['ngOpenFB'])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
-  $scope.playlists = [
+.controller('RestaurantsCtrl', function($scope) {
+  $scope.restaurants = [
                     {
                         "id":1,
                          "title" : 'Chester Cab Pizza',
@@ -112,5 +112,5 @@ angular.module('starter.controllers', ['ngOpenFB'])
   ];
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
+.controller('RestaurantCtrl', function($scope, $stateParams) {
 });

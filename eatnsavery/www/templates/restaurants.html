@@ -1,0 +1,12 @@
+<ion-view view-title="Eat N Savery">
+  <ion-content >
+    <ion-list>
+	<ion-item ng-repeat="restaurant in restaurants" href="#/app/restaurants/{{restaurant.id}}" class="restaurant-list">
+	<div class="restaurant-item" ng-style="{'background-image': 'url(' + restaurant.imageurl + ')' }" style="height:200px; width:100%;">
+			<h3 class="restaurant-name">{{restaurant.title}}</h3>
+		<!--	<img src="{{playlist.imageurl}}" class="image-main" style="height:200px; width:100%;" >-->
+	</div>
+	</ion-item>
+     </ion-list>
+  </ion-content>
+</ion-view>
