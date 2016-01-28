@@ -1,5 +1,9 @@
 angular.module('starter.controllers', ['ngOpenFB'])
 
+.service('detailService', function() {
+    this.itemName;
+})
+
 .controller('AppCtrl', function($scope, $ionicModal, $timeout, ngFB, $location) {
 
   // With the new view caching in Ionic, Controllers are only called
@@ -15,6 +19,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
             if (response.status === 'connected') {
 				alert("test");
 				$location.path('app/browse');
+				//change login to logout here
 				console.log('Facebook login succeeded');
 				$scope.closeLogin();
             } else {
@@ -112,7 +117,11 @@ angular.module('starter.controllers', ['ngOpenFB'])
                          "imageurl":"img/restaurants/mozzeroni.png"
                     }
   ];
+	$scope.getDetail=function(ObjectData){
+		detailService.itemName=ObjectData.title;
+	}
 })
 
-.controller('RestaurantCtrl', function($scope, $stateParams) {
+.controller('RestaurantCtrl', function($scope, $stateParams, detailService) {
+	$scope.detailService=detailService;
 });

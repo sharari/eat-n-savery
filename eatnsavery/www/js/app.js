@@ -40,7 +40,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
       }
     }
   })
-
+  
   .state('app.submit', {
     url: '/submit',
     views: {
@@ -77,6 +77,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
       }
     })
 
+    .state('app.profile', {
+    url: '/profile',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/profile.html'
+      }
+    }
+  })
+
+  
   .state('app.single', {
     url: '/restaurants/:restaurantId',
     views: {
@@ -85,6 +95,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
         controller: 'RestaurantCtrl'
       }
     }
+
   });
 
   // if none of the above states are matched, use this as the fallback
