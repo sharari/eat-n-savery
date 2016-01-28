@@ -18,7 +18,8 @@ angular.module('starter.controllers', ['ngOpenFB'])
         function (response, $state) {
             if (response.status === 'connected') {
 				$location.path('app/browse');
-				angular.element('.loggedout').addClass('ng-hide').
+				angular.element(document.getElementById("loggedin")).addClass('ng-hide');
+				angular.element(document.getElementById("loggedout")).removeClass('ng-hide');
 				console.log('Facebook login succeeded');
 				$scope.closeLogin();
             } else {

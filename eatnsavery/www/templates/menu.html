@@ -45,7 +45,7 @@
     <ion-content>
 	
 	<!--- LIST 1: Logged Out -->
-      <ion-list id="loggedin" ng-hide="loggedin">
+      <ion-list id="loggedin" class="loggedin">
         <ion-item menu-close ng-click="login()">
           Login
         </ion-item>
@@ -64,7 +64,7 @@
       </ion-list>
 
 	<!--- LIST 2: Logged Out -->
-      <ion-list  id="loggedout" ng-hide="loggedout" class="loggedout ng-hide" ng-show=">
+      <ion-list  id="loggedout" class="loggedout ng-hide">
         <ion-item menu-close ng-click="login()">
           Logout
         </ion-item>
