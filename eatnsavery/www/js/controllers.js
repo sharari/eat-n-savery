@@ -17,7 +17,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
     ngFB.login({scope: 'email'}).then(
         function (response, $state) {
             if (response.status === 'connected') {
-				$location.path('app/browse');
+				$location.path('app/profile');
 				angular.element(document.getElementById("loggedin")).addClass('ng-hide');
 				angular.element(document.getElementById("loggedout")).removeClass('ng-hide');
 				console.log('Facebook login succeeded');
@@ -121,6 +121,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
 		detailService.itemName=ObjectData.title;
 	}
 })
+
 
 .controller('RestaurantCtrl', function($scope, $stateParams, detailService) {
 	$scope.detailService=detailService;
