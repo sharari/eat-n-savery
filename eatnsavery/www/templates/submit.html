@@ -1,5 +1,18 @@
-<ion-view view-title="Browse">
+<ion-view view-title="Your Food Submissions">
   <ion-content>
-    <h1>Browse</h1>
+    <ion-list>
+
+        <ion-item ng-repeat="item in items" class="item item-text-wrap">
+          <div ng-class="isItemShown(item) ? 'item-expand active' : 'item-expand inactive'">
+            <h2>{{ item.title }}</h2>
+            <p>{{ item.text }}</p>
+          </div>
+          <div ng-click="toggleItem(item)" class="item-expand-footer">
+            <i ng-class="isItemShown(item) ? 'ion-ios-minus-outline' : 'ion-ios-plus-outline'"></i>
+            {{ isGroupShown(item) ? 'Less' : 'More' }}
+          </div>
+        </ion-item>
+
+      </ion-list>
   </ion-content>
 </ion-view>

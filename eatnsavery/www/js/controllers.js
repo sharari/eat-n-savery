@@ -56,6 +56,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
   };
 })
 
+
 .controller('DiscountsCtrl', function($scope) {
   $scope.dis = [
                     {
