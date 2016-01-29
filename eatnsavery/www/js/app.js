@@ -22,6 +22,90 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
     }
   });
 })
+  .factory('RestaurantsMasterService', function () {
+
+  var restaurants = [
+                    {
+                        "id":1,
+                         "title" : 'Chester Cab Pizza',
+                         "iconoff":'ion-ios-photos',
+                         "iconon":'ion-ios-photos',
+                         "url":'chester',
+                         "tabname":"tab-dash",
+                         "imageurl":"img/restaurants/chester.png",
+						 "admins":[
+							 "joe@aol.com",
+							 "bob@aol.com",
+							 "joe@aol.com",
+						 ],
+                    },
+                    {
+                        "id":2,
+                         "title" : 'Deli Sandros',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/deli1.png"
+                    },
+                    {
+                        "id":3,
+                         "title" : 'Hans',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/hans.png"
+                    },
+                    {
+                        "id":4,
+                         "title" : 'Hogans Hideaway',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/hogans.png"
+                    },
+                    {
+                        "id":5,
+                         "title" : 'Jines Restaurant',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/jines.png"
+                    },
+                    {
+                        "id":6,
+                         "title" : 'Mozzeroni',
+                         "iconoff":'ion-android-star-half',
+                         "iconon":'ion-android-star-half',
+                         "url":'top5',
+                         "tabname":'tab-top5',
+                         "imageurl":"img/restaurants/mozzeroni.png"
+                    }
+  ];
+
+ /* var restaurants = [];
+
+  for (var i=0; i<30; i++) {
+    restaurants[i] = {
+      id: i,
+      'title': 'Name' + i
+    };
+
+  }
+*/
+  return {
+    all: function () {
+      return restaurants;
+    },
+    get: function (restaurantsId) {
+	alert(restaurantsId);
+      return restaurants[2].id;
+    }
+  };
+})
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
 
@@ -81,7 +165,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
       views: {
         'menuContent': {
           templateUrl: 'templates/restaurants.html',
-          controller: 'RestaurantsCtrl'
+          controller: 'RestaurantsMasterCtrl'
         }
       }
     })
@@ -101,7 +185,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
     views: {
       'menuContent': {
         templateUrl: 'templates/restaurant.html',
-        controller: 'RestaurantCtrl'
+        controller: 'RestaurantDetailCtrl'
       }
     }
 

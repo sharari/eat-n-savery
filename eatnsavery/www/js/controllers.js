@@ -1,10 +1,6 @@
 angular.module('starter.controllers', ['ngOpenFB'])
 
-.service('detailService', function() {
-    this.itemName;
-})
-
-.controller('AppCtrl', function($scope, $ionicModal, $timeout, ngFB, $location) {
+.controller('AppCtrl', function($scope, $ionicModal, $timeout, ngFB, $location, RestaurantsMasterService) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -122,13 +118,30 @@ angular.module('starter.controllers', ['ngOpenFB'])
                          "imageurl":"img/restaurants/mozzeroni.png"
                     }
   ];
-	$scope.getDetail=function(ObjectData){
-		detailService.itemName=ObjectData.title;
-	}
 })
 
-.controller('RestaurantsCtrl', function($scope) {
-  $scope.restaurants = [
+.controller('RestaurantsMasterCtrl', function($scope, RestaurantsMasterService, $ionicScrollDelegate, $ionicHistory) {
+
+  $scope.$on('$ionicView.afterLeave', function(){
+    $ionicHistory.clearCache();
+  });
+  $scope.$on('$ionicView.beforeEnter', function(){
+    //$ionicHistory.clearCache();
+  });
+  $scope.$on('$ionicView.beforeLeave', function(){
+    $ionicHistory.clearCache();
+  });
+  $scope.$on('$ionicView.afterEnter', function(){
+    $ionicHistory.clearCache();
+  });
+
+  $scope.restaurants = RestaurantsMasterService.all();
+
+  $scope.scrollBottom = function() {
+    $ionicScrollDelegate.scrollBottom(true);
+  };
+
+/*  $scope.restaurants = [
                     {
                         "id":1,
                          "title" : 'Chester Cab Pizza',
@@ -188,13 +201,10 @@ angular.module('starter.controllers', ['ngOpenFB'])
                          "tabname":'tab-top5',
                          "imageurl":"img/restaurants/mozzeroni.png"
                     }
-  ];
-	$scope.getDetail=function(ObjectData){
-		detailService.itemName=ObjectData.title;
-	}
+  ]; */
 })
 
 
-.controller('RestaurantCtrl', function($scope, $stateParams, detailService) {
-	$scope.detailService=detailService;
+.controller('RestaurantDetailCtrl', function($scope, $stateParams, RestaurantsMasterService) {
+  $scope.restaurant = RestaurantsMasterService.get($stateParams.petsId);
 });
