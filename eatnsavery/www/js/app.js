@@ -40,6 +40,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
       }
     }
   })
+
+  .state('app.discounts', {
+    url: '/discounts',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/discounts.html'
+      }
+    }
+  })
   
   .state('app.submit', {
     url: '/submit',
