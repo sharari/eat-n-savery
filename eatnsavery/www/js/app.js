@@ -87,13 +87,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
   ];
 
  /* var restaurants = [];
-
   for (var i=0; i<30; i++) {
     restaurants[i] = {
       id: i,
       'title': 'Name' + i
     };
-
   }
 */
   return {
@@ -194,5 +192,3 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/restaurants');
 });
-
-
