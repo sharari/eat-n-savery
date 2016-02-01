@@ -99,7 +99,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
       return restaurants;
     },
     get: function (restaurantsId) {
-	alert(restaurantsId);
+	//alert(restaurantsId);
       return restaurants[2].id;
     }
   };
