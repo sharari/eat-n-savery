@@ -50,7 +50,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
                     },
                     {
                         "id":3,
-                         "title" : 'Hans',
+                         "title" : 'Hans Noodle Bar',
                          "iconoff":'ion-android-contact',
                          "iconon":'ion-android-contact',
                          "url":'cenquiry',

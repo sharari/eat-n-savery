@@ -10,11 +10,17 @@
 .restaurant-list .item-content .restaurant-name{
 	position: absolute;
 	bottom: 0;
-	color: white;
-	padding: 5px;
-	height: 20px;
+	color: white; 
+	padding: 15px;
+	font-size: 20px;
+	padding-top: 20px;
+	height: 200px;
 	width: 100%;
 	background-color: black;
+	  opacity: 0.3;
+    filter: alpha(opacity=40); 
+	    box-shadow: 100px 100px 25px #888888;
+
 }
 
 
@@ -81,8 +87,28 @@ Preview
   text-align: center;
 }
 
+<<<<<<< HEAD
 .map{
   width: 100%;
   height: 160px;
 }
                 
+=======
+                .color-primary-0 { color: #FF6223 }	/* Main Primary color */
+.color-primary-1 { color: #BB8A76 }
+.color-primary-2 { color: #FFE2D7 }
+.color-primary-3 { color: #B03200 }
+.color-primary-4 { color: #FF4900 }
+
+.color-secondary-1-0 { color: #FF7C23 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #BB9276 }
+.color-secondary-1-2 { color: #FFE7D7 }
+.color-secondary-1-3 { color: #B04700 }
+.color-secondary-1-4 { color: #FF6700 }
+
+.color-secondary-2-0 { color: #FF4123 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #BB7F76 }
+.color-secondary-2-2 { color: #FFDCD7 }
+.color-secondary-2-3 { color: #B01800 }
+.color-secondary-2-4 { color: #FF2300 }
+>>>>>>> origin/master
