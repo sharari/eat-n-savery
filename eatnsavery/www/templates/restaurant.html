@@ -1,8 +1,35 @@
 <ion-view view-title="{{restaurant.id}}">
   <ion-content>
-    <div class="list card">
 
-	  <div class="item item-avatar">
+    <img class="map" src="img/jinesMap.png"/>
+
+	<div class="restaurant">
+		<p class="restDescription">Jines Restaurant<br>658 Park Ave.<br>Rochester, NY 14607<br>www.jinesrestaurant.com<br><br>
+		<button href="tel:7816353194" class="button button-outline button-energized">
+			<i class="icon ion-ios-telephone"></i> Call
+		</button></p>
+		<p><b>Business Hours:</b><br>
+			Monday-Saturday: 7AM - 10PM<br>
+			Sunday: 7AM - 8PM<br><br>
+			<b>Description:</b><br>
+			All day breakfast and Sunday brunch draw crowds to this friendly Greek diner with sidewalk seating</p>
+	</div>
+<div class="list card">
+
+    	<div class="item item-body">
+    		<p><b>Pancakes</b>
+    			<span id="discount">25% off</span><br>
+    			Available until 2PM<br>
+    			25 coupons</p>
+    	</div>
+
+    	<div class="item item-body">
+    		<p><b>Free Coffee with any breakfast</b><br>
+    			Available until 2PM<br>
+    			20 coupons</p>
+    	</div>
+
+	  <!--<div class="item item-avatar">
 	    <img src="http://placehold.it/150x150">
 	    <h2>{{restaurant.title}}</h2>
 	    <h2>Chester Cab Pizza</h2>
@@ -22,7 +49,7 @@
 
 	  <div class="item item-body" id="map" data-tap-disabled="true"></div>
 	    
-	  </div>
+	  </div>-->
 
 	</div>
   </ion-content>

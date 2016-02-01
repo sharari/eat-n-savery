@@ -73,5 +73,16 @@ Preview
   padding-right: 10px;
 }
 
+.restaurant{
+  padding: 10px;
+}
 
+.restaurant .restDescription{
+  text-align: center;
+}
+
+.map{
+  width: 100%;
+  height: 160px;
+}
                 
