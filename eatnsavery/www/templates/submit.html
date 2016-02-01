@@ -1,4 +1,4 @@
-<ion-view view-title="Your Food Submissions">
+<ion-view view-title="Submissions">
   <ion-content>
     <div class="list">
     	<div class ="item item-divider">Submit A New Item</div>
@@ -6,16 +6,36 @@
     		<span class="input-label">Name</span>
     		<input type="text" placeholder="Name of Item">
   		</label>
+		<ion-checkbox ng-model="showPasswordIsChecked">Time Sensitive</ion-checkbox>
+
   		<label class="item item-input">
     		<span class="input-label">Time</span>
     		<input type="text" placeholder="Time of Expiration">
   		</label>
-  		<div class ="item item-divider"></div>
+  <!--<ion-toggle ion-toggle-text ng-model="simple">
+    Simple Example: <b>{{ simple || false }}</b>
+  </ion-toggle>-->
+  
+<!--  		<label class="item item-input">
+		  <ion-toggle ion-toggle-text="Yes;None" ng-model="customText">
+			Expiration Date:
+		  </ion-toggle>
+		<input type="text" placeholder="Time of Expiration">
+		</label> -->
+ <!-- Password -->
+<!-- <label class="item item-input item-stacked-label">
+   <span class="input-label">Time-Sensitive</span>
+   <input type="{{ user.showInputField ? 'text' : 'password'}}"
+          ng-model="user.password">
+ </label>-->
+
+  <!--- <ion-toggle ion-toggle-text ng-true-value="so true" ng-false-value="so false" ng-model="textByValue">
+    Text by value: <b>{{ textByValue || 'so false' }}</b>
+  </ion-toggle> -->
   		<label class="item item-input">
     		<span class="input-label">Price</span>
 			<input type="number" placeholder="Price of Item">
   		</label>
-  		<div class ="item item-divider">Or</div>
   		<label class="item item-input">
     		<span class="input-label">Description</span>
 			<input type="text" placeholder="Write a description here (e.g. 50% off salad)">
@@ -27,12 +47,6 @@
 		</label>
   		<div class ="item item-divider">All Submissions</div>
   		<div class="list">
-		   <div class="item item-avatar">
-			  <img src="img/restaurants/jines.png">
-			  <h3>Jine's Restaurant</h3>
-				<p><em>Buy get 1 free</em></p>
-				<p><em>Wings</em></p>
-		   </div>
 
 		   <div class="item item-thumbnail-left">
 			  <img src="img/restaurants/jines.png">
@@ -40,13 +54,30 @@
 				<p><em>Buy get 1 free</em></p>
 				<p><em>Wings</em></p>
 			</div>
-					   <div class="item item-avatar">
+		   <div class="item item-thumbnail-left">
 			  <img src="img/restaurants/jines.png">
 			  <h3>Jine's Restaurant</h3>
 				<p><em>Buy get 1 free</em></p>
 				<p><em>Wings</em></p>
-		   </div>
-
+			</div>
+		   <div class="item item-thumbnail-left">
+			  <img src="img/restaurants/jines.png">
+			  <h3>Jine's Restaurant</h3>
+				<p><em>Buy get 1 free</em></p>
+				<p><em>Wings</em></p>
+			</div>
+		   <div class="item item-thumbnail-left">
+			  <img src="img/restaurants/jines.png">
+			  <h3>Jine's Restaurant</h3>
+				<p><em>Buy get 1 free</em></p>
+				<p><em>Wings</em></p>
+			</div>
+		   <div class="item item-thumbnail-left">
+			  <img src="img/restaurants/jines.png">
+			  <h3>Jine's Restaurant</h3>
+				<p><em>Buy get 1 free</em></p>
+				<p><em>Wings</em></p>
+			</div>
 		   <div class="item item-thumbnail-left">
 			  <img src="img/restaurants/jines.png">
 			  <h3>Jine's Restaurant</h3>

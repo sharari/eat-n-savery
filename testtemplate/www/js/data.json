@@ -1,3 +1,4 @@
+[
 {
 	"id":"0",
 	"title":"Introduction to Ionic", 
@@ -22,4 +23,4 @@
 	"room":"Ballroom A", 
 	"description": "In this session, you'll learn how to build a native-like mobile application using the Ionic Framework, AngularJS, and Cordova."
 }
-
+]
