@@ -6,6 +6,9 @@
     </div>
   </ion-header-bar>
   <ion-content>
+  <img class="logo" src="img/pretzel.png"/>
+  <h2 class="loginText">Welcome!</h2>
+  <h4 class="loginText">Vendor Login</h4>
     <form ng-submit="doLogin()">
       <div class="list">
         <!--<label class="item item-input">
@@ -17,8 +20,9 @@
           <input type="password" ng-model="loginData.password">
         </label> -->
 		<label class="item">
+
 			<button class="button button-block button-positive" ng-click="fbLogin()" href="#/app/browse">
-			Login with Facebook
+			 Login with Facebook
 			</button>
 		</label>
       </div>
