@@ -59,8 +59,20 @@ angular.module('starter.controllers', ['ngOpenFB'])
 
 .controller('DiscountsCtrl', function($scope) {
   $scope.dis = [
-                    {
+  
+  
+                      {
                         "id":1,
+                         "title" : 'Jines Restaurant',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/jines.png"
+                    },
+                    {
+						
+                        "id":5,
                          "title" : 'Chester Cab Pizza',
                          "iconoff":'ion-ios-photos',
                          "iconon":'ion-ios-photos',
@@ -84,7 +96,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
                     },
                     {
                         "id":3,
-                         "title" : 'Hans',
+                         "title" : 'Han Noodle Bar',
                          "iconoff":'ion-android-contact',
                          "iconon":'ion-android-contact',
                          "url":'cenquiry',
@@ -99,15 +111,6 @@ angular.module('starter.controllers', ['ngOpenFB'])
                          "url":'cenquiry',
                          "tabname":'tab-chats',
                          "imageurl":"img/restaurants/hogans.png"
-                    },
-                    {
-                        "id":5,
-                         "title" : 'Jines Restaurant',
-                         "iconoff":'ion-android-contact',
-                         "iconon":'ion-android-contact',
-                         "url":'cenquiry',
-                         "tabname":'tab-chats',
-                         "imageurl":"img/restaurants/jines.png"
                     },
                     {
                         "id":6,

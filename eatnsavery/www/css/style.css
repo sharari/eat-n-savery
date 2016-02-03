@@ -106,7 +106,47 @@ Preview
   text-align: center;
 }
     
-                .color-primary-0 { color: #FF6223 }	/* Main Primary color */
+ion-content { 
+	color: #FFE2D7; /* Main Primary color */
+	background-color: #B03200;
+}	
+ion-view{ 
+	color: #FFE2D7; /* Main Primary color */
+	background-color: #B03200;
+}	
+ion-item{ 
+	color: #FFE2D7; /* Main Primary color */
+	background-color: #B03200;
+}
+.item, .item-complex, .item-content{ 
+	color: #FFE2D7; /* Main Primary color */
+	background-color: #FF6700;
+}	
+.item, .item-complex, .item-content{ 
+	color: #FFE2D7; /* Main Primary color */
+	background-color: #FF6700;
+}	
+.item-complex .item-content,
+.item-radio .item-content {
+	background-color: #FF6700;
+  }
+::-webkit-input-placeholder {
+	color: #FFE2D7; /* Main Primary color */
+}
+.discounts h3{
+	padding-top: 10px;
+	font-size: 18px;
+    color: #3B5957;
+  /*  text-shadow: 0px 1px 0px rgba(255, 255, 255, .5);  */
+}
+.discounts p{
+	font-size: 16px;
+	color: #B03200;	
+}
+.button{
+	color: #FFE2D7; /* Main Primary color */
+	background-color: #FF6700;
+}
 .color-primary-1 { color: #BB8A76 }
 .color-primary-2 { color: #FFE2D7 }
 .color-primary-3 { color: #B03200 }
