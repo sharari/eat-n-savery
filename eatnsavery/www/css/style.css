@@ -106,9 +106,13 @@ Preview
   text-align: center;
 }
     
+    /*#0D58A6*/
 ion-content { 
-	color: #FFE2D7; /* Main Primary color */
-	background-color: #B03200;
+	/*color: #FFE2D7;*/ /* Main Primary color */
+	color: #FFDD62;
+	/*background-color: #B03200;*/
+	/*background-color: #5c5248;*/
+	background-color: #403C3B;
 }	
 ion-view{ 
 	color: #FFE2D7; /* Main Primary color */
@@ -120,15 +124,16 @@ ion-item{
 }
 .item, .item-complex, .item-content{ 
 	color: #FFE2D7; /* Main Primary color */
-	background-color: #FF6700;
+	/*background-color: #FF6700;*/
+	/*background-color: #547DBF;*/
 }	
 .item, .item-complex, .item-content{ 
 	color: #FFE2D7; /* Main Primary color */
-	background-color: #FF6700;
+	background-color: #547DBF;
 }	
 .item-complex .item-content,
 .item-radio .item-content {
-	background-color: #FF6700;
+	background-color: #547DBF;
   }
 ::-webkit-input-placeholder {
 	color: #FFE2D7; /* Main Primary color */
