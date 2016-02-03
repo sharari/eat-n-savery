@@ -92,6 +92,8 @@ Preview
   width: 100%;
   height: 160px;
 }
+
+
         
 /* login.html */
 .logo{
@@ -104,9 +106,9 @@ Preview
 
 .loginText{
   text-align: center;
+  color: #FFC900;
 }
     
-    /*#0D58A6*/
 ion-content { 
 	/*color: #FFE2D7;*/ /* Main Primary color */
 	color: #FFDD62;
@@ -130,6 +132,7 @@ ion-item{
 .item, .item-complex, .item-content{ 
 	color: #FFE2D7; /* Main Primary color */
 	background-color: #547DBF;
+	/*background-color: #403C3B;*/
 }	
 .item-complex .item-content,
 .item-radio .item-content {
@@ -138,20 +141,42 @@ ion-item{
 ::-webkit-input-placeholder {
 	color: #FFE2D7; /* Main Primary color */
 }
+
+.item-thumbnail-left{
+	background-color: #403C3B;
+}
 .discounts h3{
 	padding-top: 10px;
 	font-size: 18px;
-    color: #3B5957;
+	color: #FFC900;
+    /*color: #3B5957;*/
   /*  text-shadow: 0px 1px 0px rgba(255, 255, 255, .5);  */
 }
 .discounts p{
 	font-size: 16px;
-	color: #B03200;	
+	/*color: #B03200;	*/
+	color: #fff;
 }
+
+/* restaurant.html */
+.rest-desc{
+	background-color: #547DBF;
+}
+
 .button{
 	color: #FFE2D7; /* Main Primary color */
 	background-color: #FF6700;
 }
+
+.button-block .button-dark{
+	background-color: #fff;
+}
+
+/*login.html*/
+.loginbg{
+	background-color: #403C3B;
+}
+
 .color-primary-1 { color: #BB8A76 }
 .color-primary-2 { color: #FFE2D7 }
 .color-primary-3 { color: #B03200 }
