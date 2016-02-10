@@ -156,6 +156,7 @@ ion-item{
 	font-size: 16px;
 	/*color: #B03200;	*/
 	color: #fff;
+<<<<<<< HEAD
 }
 
 /* restaurant.html */
@@ -163,6 +164,15 @@ ion-item{
 	background-color: #547DBF;
 }
 
+=======
+}
+
+/* restaurant.html */
+.rest-desc{
+	background-color: #547DBF;
+}
+
+>>>>>>> origin/master
 .button{
 	color: #FFE2D7; /* Main Primary color */
 	background-color: #FF6700;

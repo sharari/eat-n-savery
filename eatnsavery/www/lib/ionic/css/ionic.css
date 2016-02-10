@@ -8869,7 +8869,8 @@ progress {
   display: block;
   clear: both; }
   .button-block:after {
-    clear: both; }
+    clear: both;
+    /*background-color: #ffc900;    yellow blocks text*/ }
 
 .button-full,
 .button-full > .button {
