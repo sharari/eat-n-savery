@@ -25,18 +25,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
   .factory('RestaurantsMasterService', function () {
 
   var restaurants = [
-  
-                      {
-                        "id":1,
-                         "title" : 'Jines Restaurant',
-                         "iconoff":'ion-android-contact',
-                         "iconon":'ion-android-contact',
-                         "url":'cenquiry',
-                         "tabname":'tab-chats',
-                         "imageurl":"img/restaurants/jines.png"
-                    },
                     {
-                        "id":5,
+                        "id":1,
                          "title" : 'Chester Cab Pizza',
                          "iconoff":'ion-ios-photos',
                          "iconon":'ion-ios-photos',
@@ -48,9 +38,18 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
 							 "bob@aol.com",
 							 "joe@aol.com",
 						 ],
+                    },  
+                      {
+                        "id":2,
+                         "title" : 'Jines Restaurant',
+                         "iconoff":'ion-android-contact',
+                         "iconon":'ion-android-contact',
+                         "url":'cenquiry',
+                         "tabname":'tab-chats',
+                         "imageurl":"img/restaurants/jines.png"
                     },
                     {
-                        "id":2,
+                        "id":3,
                          "title" : 'Deli Sandros',
                          "iconoff":'ion-android-contact',
                          "iconon":'ion-android-contact',
@@ -59,7 +58,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB'])
                          "imageurl":"img/restaurants/deli1.png"
                     },
                     {
-                        "id":3,
+                        "id":5,
                          "title" : 'Hans Noodle Bar',
                          "iconoff":'ion-android-contact',
                          "iconon":'ion-android-contact',
