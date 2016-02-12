@@ -23,7 +23,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'ngCordov
     }
 
     db = $cordovaSQLite.openDB({name: "eat.db"});
-    $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS restaurantprofiles ()");
+    $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS restaurantprofiles (restaurant text primary key, id text, imageurl text, socialmedia1 text, socialmedia2 text, menuurl text)");
   });
 })
   .factory('RestaurantsMasterService', function () {
