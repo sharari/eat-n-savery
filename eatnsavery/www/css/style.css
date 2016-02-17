@@ -111,10 +111,11 @@ Preview
     
 ion-content { 
 	/*color: #FFE2D7;*/ /* Main Primary color */
-	color: #FFDD62;
-	/*background-color: #B03200;*/
-	/*background-color: #5c5248;*/
-	background-color: #403C3B;
+	/*color: #FFDD62;/*	/*yellw*/
+	/*background-color: #403C3B;*/
+
+	color: #609c92;	/*dark green*/
+	background-color: #f0f0e2;	/*grey background color*/
 }	
 ion-view{ 
 	color: #FFE2D7; /* Main Primary color */
@@ -161,7 +162,7 @@ ion-item{
 
 /* restaurant.html */
 .rest-desc{
-	background-color: #547DBF;
+	background-color: #609c92; /*blue*/
 }
 
 .button{
@@ -171,6 +172,10 @@ ion-item{
 
 .button-block .button-dark{
 	background-color: #000000;
+}
+
+#discount{
+	float: right;
 }
 
 /*login.html*/
