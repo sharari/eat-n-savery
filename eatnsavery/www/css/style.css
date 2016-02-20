@@ -114,8 +114,8 @@ ion-content {
 	/*color: #FFDD62;/*	/*yellw*/
 	/*background-color: #403C3B;*/
 
-	color: #609c92;	/*dark green*/
-	background-color: #f0f0e2;	/*grey background color*/
+	color: #A0D3D8;	/*dark green*/
+	background-color: #fff;	/*grey background color*/
 }	
 ion-view{ 
 	color: #FFE2D7; /* Main Primary color */
@@ -162,7 +162,7 @@ ion-item{
 
 /* restaurant.html */
 .rest-desc{
-	background-color: #609c92; /*blue*/
+	background-color: #A0D3D8; /*mint*/
 }
 
 .button{
