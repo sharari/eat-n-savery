@@ -111,10 +111,11 @@ Preview
     
 ion-content { 
 	/*color: #FFE2D7;*/ /* Main Primary color */
-	color: #FFDD62;
-	/*background-color: #B03200;*/
-	/*background-color: #5c5248;*/
-	background-color: #403C3B;
+	/*color: #FFDD62;/*	/*yellw*/
+	/*background-color: #403C3B;*/
+
+	color: #A0D3D8;	/*dark green*/
+	background-color: #fff;	/*grey background color*/
 }	
 ion-view{ 
 	color: #FFE2D7; /* Main Primary color */
@@ -156,11 +157,10 @@ ion-item{
 	font-size: 16px;
 	/*color: #B03200;	*/
 	color: #fff;
-}
 
 /* restaurant.html */
 .rest-desc{
-	background-color: #547DBF;
+	background-color: #A0D3D8; /*mint*/
 }
 
 .button{
@@ -169,21 +169,25 @@ ion-item{
 }
 
 .button-block .button-dark{
-	background-color: #fff;
+	background-color: #000000;
+}
+
+#discount{
+	float: right;
 }
 
 /*login.html*/
 .loginbg{
-	background-color: #403C3B;
+	background-color: #A0D3D8;
 }
 .tabs-top > .tabs, .tabs.tabs-top {
     position: inherit;
 }
 
-.color-primary-1 { color: #BB8A76 }
+/*.color-primary-1 { color: #BB8A76 }
 .color-primary-2 { color: #FFE2D7 }
 .color-primary-3 { color: #B03200 }
-.color-primary-4 { color: #FF4900 }
+.color-primary-4 { color: #FF4900 }*/
 
 .color-secondary-1-0 { color: #FF7C23 }	/* Main Secondary color (1) */
 .color-secondary-1-1 { color: #BB9276 }

@@ -4,9 +4,10 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-//angular.module('starter', ['ionic', 'starter.controllers'])
+var db = null;
+
 angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'ngCordova'])
-.run(function($ionicPlatform, ngFB) {
+.run(function($ionicPlatform, ngFB, $cordovaSQLite) {
 	ngFB.init({appId: '1803097819917474'});
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -20,6 +21,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'ngCordov
       // org.apache.cordova.statusbar required
       StatusBar.styleDefault();
     }
+
+    db = $cordovaSQLite.openDB({name: "eat.db"});
+    $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS restaurantprofiles (restaurant text primary key, id text, imageurl text, socialmedia1 text, socialmedia2 text, menuurl text)");
   });
 })
   .factory('RestaurantsMasterService', function () {
