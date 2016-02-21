@@ -1,3 +1,6 @@
+.tabs-top > .tabs, .tabs.tabs-top {
+    position: inherit;
+}
 .restaurant-list .item-content{
 	padding: 0px 0px 0px 0px;
 	border-style: solid;
@@ -18,7 +21,7 @@
 	width: 100%;
 	background-color: black;
 	  opacity: 0.3;
-    filter: alpha(opacity=40); 
+    filter: alpha(opacity=40); -
 	    box-shadow: 100px 100px 25px #888888;
 
 }
@@ -180,9 +183,7 @@ ion-item{
 .loginbg{
 	background-color: #A0D3D8;
 }
-.tabs-top > .tabs, .tabs.tabs-top {
-    position: inherit;
-}
+
 
 /*.color-primary-1 { color: #BB8A76 }
 .color-primary-2 { color: #FFE2D7 }
