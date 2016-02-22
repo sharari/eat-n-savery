@@ -10,6 +10,10 @@
 	color: white;
 }
 
+.input-label{
+	color: #000;
+}
+
 .menu .bar-header{
 	background-color: #ed4949;
 }
@@ -101,7 +105,9 @@
   height: 160px;
 }
 
-
+.item p:last-child{
+	color: #000;
+}
         
 /* login.html */
 .logo{
