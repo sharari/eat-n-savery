@@ -10,6 +10,14 @@
 	color: white;
 }
 
+.menu .bar-header{
+	background-color: #ed4949;
+}
+
+.bar-header{
+	background-color: #ed4949;
+}
+
 .restaurant-list .item-content .restaurant-name{
 	position: absolute;
 	bottom: 0;
@@ -23,7 +31,10 @@
 	  opacity: 0.3;
     filter: alpha(opacity=40); -
 	    box-shadow: 100px 100px 25px #888888;
+}
 
+.bar .button.button-clear, .bar button.button-clear{
+	color: #606060;
 }
 
 
@@ -102,23 +113,19 @@ Preview
 .logo{
   margin: 0 auto !important;
   position: relative;
-  width: 20%;
-  height: 20%;
+  width: 30%;
+  /*height: 80%;*/
   display: block;
 }  
 
 .loginText{
   text-align: center;
-  color: #FFC900;
+  color: #97dbcc;
 }
     
 ion-content { 
-	/*color: #FFE2D7;*/ /* Main Primary color */
-	/*color: #FFDD62;/*	/*yellw*/
-	/*background-color: #403C3B;*/
-
-	color: #A0D3D8;	/*dark green*/
-	background-color: #fff;	/*grey background color*/
+	color: #A0D3D8;	/*mint*/
+	background-color: #606060;	/*grey background color*/
 }	
 ion-view{ 
 	color: #FFE2D7; /* Main Primary color */
@@ -134,13 +141,13 @@ ion-item{
 	/*background-color: #547DBF;*/
 }	
 .item, .item-complex, .item-content{ 
-	color: #FFE2D7; /* Main Primary color */
-	background-color: #547DBF;
+	color: #000; /* Main Primary color */
+	background-color: #97dbcc;
 	/*background-color: #403C3B;*/
 }	
 .item-complex .item-content,
 .item-radio .item-content {
-	background-color: #547DBF;
+	background-color: #97dbcc;
   }
 ::-webkit-input-placeholder {
 	color: #FFE2D7; /* Main Primary color */
