@@ -368,3 +368,19 @@ Processing by RestaurantsController#index as HTML
   [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
   Rendered restaurants/index.html.erb within layouts/application (1.3ms)
 Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+  [1m[36mRestaurant Load (5.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (18.0ms)[0m  [1mINSERT INTO "restaurants" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Mozzeronis Pizza"], ["created_at", "2016-03-22 04:28:44.035452"], ["updated_at", "2016-03-22 04:28:44.035452"]]
+  [1m[35m (18.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "restaurants" ("name", "imageurl", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Mozzeronis Pizza"], ["imageurl", "img/restaurants/mozzeronis.png"], ["created_at", "2016-03-22 04:44:24.718256"], ["updated_at", "2016-03-22 04:44:24.718256"]]
+  [1m[36m (16.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "restaurants" ("name", "imageurl", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Deli Sandro's"], ["imageurl", "img/restaurants/deli1.png"], ["created_at", "2016-03-22 04:47:53.420193"], ["updated_at", "2016-03-22 04:47:53.420193"]]
+  [1m[35m (55.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "restaurants" ("name", "imageurl", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Chest Cab Pizzeria"], ["imageurl", "img/restaurants/chester.png"], ["created_at", "2016-03-22 04:48:29.543259"], ["updated_at", "2016-03-22 04:48:29.543259"]]
+  [1m[36m (18.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (2.0ms)[0m  [1mINSERT INTO "restaurants" ("name", "imageurl", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "Hogan's Hideaway"], ["imageurl", "img/restaurants/hogans.png"], ["created_at", "2016-03-22 04:48:55.507744"], ["updated_at", "2016-03-22 04:48:55.507744"]]
+  [1m[35m (51.0ms)[0m  commit transaction
