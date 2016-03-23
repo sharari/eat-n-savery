@@ -58,7 +58,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
 
 
 .controller('DiscountsCtrl', function($scope) {
-  $scope.dis = [
+  /*$scope.dis = [
   
   
                       {
@@ -121,7 +121,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
                          "tabname":'tab-top5',
                          "imageurl":"img/restaurants/mozzeroni.png"
                     }
-  ];
+  ];*/
 })
 
 .controller('RestaurantsMasterCtrl', function($scope, RestaurantsMasterService, $ionicScrollDelegate, $ionicHistory) {
