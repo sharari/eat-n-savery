@@ -64,5 +64,5 @@ angular.module('starter.services', ['ngResource'])
   ];
 	
 	
-	return $resource('http://localhost:5000/sessions/:sessionId');
+	return $resource('http://localhost:3000/sessions/:sessionId');
 });
