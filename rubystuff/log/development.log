@@ -614,3 +614,17 @@ Processing by RestaurantsController#index as HTML
   Rendered restaurants/index.html.erb within layouts/application (9.0ms)
 Completed 200 OK in 160ms (Views: 159.1ms | ActiveRecord: 0.0ms)
 >>>>>>> origin/master
+
+
+Started GET "/" for ::1 at 2016-03-23 14:47:33 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.5.2/lib/rails/templates/rails/welcome/index.html.erb (1.5ms)
+Completed 200 OK in 31ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-03-23 14:47:38 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.4ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 641ms (Views: 633.2ms | ActiveRecord: 0.7ms)
