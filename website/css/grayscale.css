@@ -389,3 +389,12 @@ body {
 	border-color: #606060;
 	border-width: 0px;
 }
+.bio{
+	padding: 0px;
+	margin:15px;
+	line-height: 1.0;
+}
+.name{
+	color:black;
+	margin-bottom: 5px;
+}
