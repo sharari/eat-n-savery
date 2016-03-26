@@ -649,6 +649,7 @@ Processing by RestaurantsController#index as HTML
   Rendered restaurants/index.html.erb within layouts/application (9.2ms)
 Completed 200 OK in 360ms (Views: 320.3ms | ActiveRecord: 0.7ms)
   [1m[36mRestaurant Load (0.9ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+<<<<<<< HEAD
   [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Migrating to AddDeviseToRestaurants (20160326021940)
   [1m[35m (0.1ms)[0m  begin transaction
@@ -973,3 +974,5 @@ Migrations are pending. To resolve this issue, run:
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (69.4ms)
+=======
+>>>>>>> parent of bec6aaa... server crash
