@@ -976,3 +976,10 @@ Migrations are pending. To resolve this issue, run:
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (69.4ms)
 =======
 >>>>>>> parent of bec6aaa... server crash
+
+
+Started GET "/" for ::1 at 2016-03-25 23:01:57 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /Library/Ruby/Gems/2.0.0/gems/railties-4.2.5.2/lib/rails/templates/rails/welcome/index.html.erb (1.3ms)
+Completed 200 OK in 28ms (Views: 9.2ms | ActiveRecord: 0.0ms)
