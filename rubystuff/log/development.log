@@ -1478,3 +1478,12 @@ Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8b
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-04-02 13:19:29 -0400
+
+
+Started GET "/" for ::1 at 2016-04-02 13:52:48 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.3ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 453ms (Views: 418.7ms | ActiveRecord: 0.8ms)
+  [1m[36mRestaurant Load (1.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
