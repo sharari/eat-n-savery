@@ -12,7 +12,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
 		
 	$scope.getData = function() {
 		console.log("HELLO WORLD");
-		$http.get('http://eat-n-savery.heroku.com//restaurants.json', function(data){
+		/*$http.get('http://eat-n-savery.heroku.com//restaurants.json', function(data){
 		console.log(data);
 		})
 	    .success(function(data) {
@@ -22,6 +22,19 @@ angular.module('starter.controllers', ['ngOpenFB'])
         .error(function(data) {
             alert("ERROR");
         });
+		*/
+		var url = "http://eat-n-savery.heroku.com//restaurants.json";
+		$http({
+			method: 'JSON',
+			url: url
+		}).
+		success(function(status) {
+			//your code when success
+		}).
+		error(function(status) {
+			//your code when fails
+		});
+		
     }
 	$scope.getData();
 	$scope.fbLogin = function () {
