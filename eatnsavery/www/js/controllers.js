@@ -23,8 +23,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
             alert("ERROR");
         });
 		*/
-		//var url = "eat-n-savery.heroku.com";
-    var url = "localhost:3000"
+		var url = "eat-n-savery.heroku.com";
     var sub = "/restaurants.json";
 
 		$http({
