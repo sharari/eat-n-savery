@@ -11,9 +11,7 @@ gem 'sqlite3', group: :development
 #in production environment (e.g. heroku) use postgres
 
 gem 'pg', group: :production
-
 gem 'rails_12factor', group: :production
-
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -54,3 +52,5 @@ group :development do
   gem 'spring'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
+ruby "2.2.4"
+ruby "2.2.4"
