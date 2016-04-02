@@ -29,7 +29,6 @@ angular.module('starter.controllers', ['ngOpenFB'])
 		$http({
 			method: 'JSON',
 			url: url
-      //url: "http://localhost:8100/eat-n-savery.heroku.com/restaurants.json"
 		}).
 		success(function(status) {
 			//your code when success
