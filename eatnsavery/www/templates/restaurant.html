@@ -1,9 +1,14 @@
-<ion-view view-title="{{restaurant.id}}">
+<ion-view view-title="HELLO {{restaurant.id}}">
     <ion-content>
 
-    <img class="map" src="img/jinesMap.png"/>
+   <div class="restaurant">
 
-	<div class="restaurant">
+    <ion-content>
+		<div class="map">
+			<div id="map" data-tap-disabled="true"></div>
+		</div>
+    </ion-content>
+	
 		<p class="restDescription">Jines Restaurant<br>658 Park Ave.<br>Rochester, NY 14607<br>www.jinesrestaurant.com<br><br>
 		<button href="tel:7816353194" class="button button-outline">
 			<i class="icon ion-ios-telephone"></i> Call
@@ -20,7 +25,7 @@
     <div class="list card">  
         <ion-tabs class="tabs-striped tabs-top tabs-icon-only" delegate-handle="myhandle">
             <ion-tab title="Daily Discounts">
-                <ion-content class="list card">
+                <ion-content class="list card" scroll="false">
                     <div class="item item-body rest-desc">
                         <p class="disccounts">
                             <b>Pancakes</b>
@@ -41,7 +46,7 @@
             </ion-tab>
 
             <ion-tab title="Promotions">
-                <ion-content class="list card">
+                <ion-content class="list card" scroll="false">
                     <div class="item item-body rest-desc">
                         <p class="discounts">
                             <b>Waffles</b>

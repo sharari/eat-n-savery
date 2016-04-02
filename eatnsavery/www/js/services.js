@@ -1,7 +1,9 @@
 angular.module('starter.services', ['ngResource'])
 
 .factory('Session', function ($resource) {
-      $scope.dis = [
+
+  
+  /*    $scope.dis = [
                     {
                         "id":1,
                          "title" : 'Chester Cab Pizza',
@@ -63,6 +65,6 @@ angular.module('starter.services', ['ngResource'])
                     }
   ];
 	
-	
+*/	
 	return $resource('http://localhost:3000/sessions/:sessionId');
 });
