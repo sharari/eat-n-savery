@@ -24,7 +24,7 @@
 
 .restaurant-list .item-content .restaurant-name{
 	position: absolute;
-	bottom: 0;
+	bottom: 0 ;
 	color: white; 
 	padding: 15px;
 	font-size: 20px;
@@ -32,7 +32,7 @@
 	height: 200px;
 	width: 100%;
 	background-color: black;
-	  opacity: 0.3;
+	opacity: 0.3;
     filter: alpha(opacity=40); -
 	    box-shadow: 100px 100px 25px #888888;
 }
