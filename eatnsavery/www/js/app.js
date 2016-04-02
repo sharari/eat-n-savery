@@ -27,10 +27,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'ngCordov
   });
 })
   .factory('RestaurantsMasterService', function () {
-	/*	$http.get('http://eat-n-savery.heroku.com//restaurants.json', function(data){
-		  console.log(data);
-	  });
-*/
+	
+	
   var restaurants = [
                     {
                         "id":1,

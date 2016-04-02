@@ -1,6 +1,6 @@
 angular.module('starter.controllers', ['ngOpenFB'])
 
-.controller('AppCtrl', function($scope, $ionicModal, $timeout, ngFB, $location, RestaurantsMasterService) {
+.controller('AppCtrl', function($scope, $http, $ionicModal, $timeout, ngFB, $location, RestaurantsMasterService) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -9,7 +9,22 @@ angular.module('starter.controllers', ['ngOpenFB'])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
-  $scope.fbLogin = function () {
+		
+	$scope.getData = function() {
+		console.log("HELLO WORLD");
+		$http.get('http://eat-n-savery.heroku.com//restaurants.json', function(data){
+		console.log(data);
+		})
+	    .success(function(data) {
+//            $scope.firstname = data.firstname;
+//            $scope.lastname = data.lastname;
+        })
+        .error(function(data) {
+            alert("ERROR");
+        });
+    }
+	$scope.getData();
+	$scope.fbLogin = function () {
     ngFB.login({scope: 'email'}).then(
         function (response, $state) {
             if (response.status === 'connected') {
@@ -23,7 +38,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
             }
         });
 	};
-  
+	  
   // Form data for the login modal
   $scope.loginData = {};
 
@@ -57,7 +72,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
 })
 
 
-.controller('DiscountsCtrl', function($scope) {
+.controller('DiscountsCtrl', function($scope, $http) {
   /*$scope.dis = [
   
   
@@ -124,7 +139,11 @@ angular.module('starter.controllers', ['ngOpenFB'])
   ];*/
 })
 
-.controller('RestaurantsMasterCtrl', function($scope, RestaurantsMasterService, $ionicScrollDelegate, $ionicHistory) {
+.controller('RestaurantsMasterCtrl', function($scope, $http, RestaurantsMasterService, $ionicScrollDelegate, $ionicHistory) {
+			console.log('hello data');
+
+
+
 
   $scope.$on('$ionicView.afterLeave', function(){
     $ionicHistory.clearCache();
