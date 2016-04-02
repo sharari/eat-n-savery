@@ -23,15 +23,21 @@ angular.module('starter.controllers', ['ngOpenFB'])
             alert("ERROR");
         });
 		*/
-		var url = "http://eat-n-savery.heroku.com//restaurants.json";
+		//var url = "eat-n-savery.heroku.com";
+    var url = "localhost:3000"
+    var sub = "/restaurants.json";
+
 		$http({
 			method: 'JSON',
 			url: url
+      //url: "http://localhost:8100/eat-n-savery.heroku.com/restaurants.json"
 		}).
 		success(function(status) {
 			//your code when success
+      console.log("getData() success!!!!!");
 		}).
 		error(function(status) {
+      console.log("getData() failed");
 			//your code when fails
 		});
 		
