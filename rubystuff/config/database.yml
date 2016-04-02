@@ -20,6 +20,11 @@ test:
   <<: *default
   database: db/test.sqlite3
 
+#production:
+#  adapter: postgresql	
+#  database: database
+
 production:
-  adapter: postgresql	
-  database: database
+	<<: *default
+	adapter: postgresql
+	database: db/production.sqlite3
