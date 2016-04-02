@@ -1490,3 +1490,4 @@ Completed 200 OK in 453ms (Views: 418.7ms | ActiveRecord: 0.8ms)
   [1m[36mRestaurant Load (1.3ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
 =======
 >>>>>>> origin/master
+  [1m[36mRestaurant Load (12.0ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
