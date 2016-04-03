@@ -7,6 +7,7 @@ gem 'rails', '4.2.5.2'
 # Use sqlite3 as the database for Active Record
 #used in development use sqlite
 gem 'sqlite3', group: :development
+#gem 'pg', group: :development
 
 #in production environment (e.g. heroku) use postgres
 
@@ -52,5 +53,7 @@ group :development do
   gem 'spring'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-ruby "2.2.4"
-ruby "2.2.4"
+ruby "2.0.0"
+ruby "2.0.0"
+#ruby "2.2.4"
+#ruby "2.2.4"

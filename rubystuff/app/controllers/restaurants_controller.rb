@@ -10,6 +10,7 @@ class RestaurantsController < ApplicationController
   # GET /restaurants/1
   # GET /restaurants/1.json
   def show
+    @restaurants = Restaurant.find(params[:id])
   end
 
   # GET /restaurants/new
@@ -35,6 +36,10 @@ class RestaurantsController < ApplicationController
         format.json { render json: @restaurant.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def restaurant_params
+    params.require(:restaurants).permit(:name)
   end
 
   # PATCH/PUT /restaurants/1

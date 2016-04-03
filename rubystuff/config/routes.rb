@@ -55,3 +55,16 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+Rails.application.routes.draw do
+   #get 'restaurants/list'
+   get 'restaurants/new'
+   post 'restaurants/create'
+   patch 'restaurants/update'
+   #get 'restaurants/list'
+   get 'restaurants/show'
+   get 'restaurants/edit'
+   get 'restaurants/delete'
+   get 'restaurants/update'
+   #get 'restaurants/show_subjects'
+end
