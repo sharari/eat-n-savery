@@ -92,8 +92,9 @@
 }
 
 /* restaurant.html */
-.restaurant{
+.restDescription{
   padding: 10px;
+  text-align: center;
 }
 
 .restaurant .restDescription{

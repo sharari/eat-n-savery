@@ -9,9 +9,10 @@ angular.module('starter.controllers', ['ngOpenFB'])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
-		
-	$scope.getData = function() {
-		console.log("HELLO WORLD");
+$scope.getData = function(){
+
+  
+
 		/*$http.get('http://eat-n-savery.heroku.com//restaurants.json', function(data){
 		console.log(data);
 		})

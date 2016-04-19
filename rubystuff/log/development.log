@@ -3810,3 +3810,43 @@ Processing by RestaurantsController#show as HTML
   [1m[35mCACHE (0.0ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", "13"]]
   Rendered restaurants/show.html.erb within layouts/application (0.7ms)
 Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.2ms)
+  [1m[36mRestaurant Load (2.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+
+
+Started GET "/" for ::1 at 2016-04-14 13:03:06 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 476ms (Views: 440.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-04-14 13:03:07 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[36mRestaurant Load (0.2ms)[0m  [1mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurants/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/1" for ::1 at 2016-04-14 13:03:09 -0400
+Processing by RestaurantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered restaurants/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 83ms (Views: 72.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants" for ::1 at 2016-04-14 13:03:14 -0400
+Processing by RestaurantsController#index as HTML
+  [1m[35mRestaurant Load (0.2ms)[0m  SELECT "restaurants".* FROM "restaurants"
+  Rendered restaurants/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/restaurants/1/edit" for ::1 at 2016-04-14 13:03:17 -0400
+Processing by RestaurantsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.1ms)[0m  [1mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered restaurants/edit.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.1ms)
