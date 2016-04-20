@@ -6,7 +6,7 @@
 	<ion-list>
 	<ion-item ng-repeat="restaurant in restaurants" class="restaurant-list" ui-sref="app.single({restaurantsId: restaurant.id})">
 	<div class="restaurant-item" ng-style="{'background-image': 'url(' + restaurant.imageurl + ')' }" style="height:200px; width:100%;">
-			<h3 class="restaurant-name">{{restaurant.title}}</h3>
+			<h3 class="restaurant-name">{{restaurant.title}}<i class="icon ion-android-car"></i></h3>
 		<!--	<img src="{{playlist.imageurl}}" class="image-main" style="height:200px; width:100%;" >-->
 	</div>
 	
