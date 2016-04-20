@@ -2,13 +2,14 @@
 	<ion-nav-title>
 		<img src="../img/survewhite.png" style="width: auto; height: 180px; top: -60px; left: 60px; position: absolute; margin: auto; text-align:center;">
 	</ion-nav-title>
-  <ion-content>
-    <ion-list>
+	<ion-content>
+	<ion-list>
 	<ion-item ng-repeat="restaurant in restaurants" class="restaurant-list" ui-sref="app.single({restaurantsId: restaurant.id})">
 	<div class="restaurant-item" ng-style="{'background-image': 'url(' + restaurant.imageurl + ')' }" style="height:200px; width:100%;">
 			<h3 class="restaurant-name">{{restaurant.title}}</h3>
 		<!--	<img src="{{playlist.imageurl}}" class="image-main" style="height:200px; width:100%;" >-->
 	</div>
+	
 	</ion-item>
      </ion-list>
   </ion-content>

@@ -9,7 +9,8 @@ angular.module('starter.controllers', ['ngOpenFB'])
   //$scope.$on('$ionicView.enter', function(e) {
   //});
 
-		
+
+	
 	$scope.getData = function() {
 		console.log("HELLO WORLD");
 		/*$http.get('http://eat-n-savery.heroku.com//restaurants.json', function(data){
@@ -87,6 +88,15 @@ angular.module('starter.controllers', ['ngOpenFB'])
       $scope.closeLogin();
     }, 1000);
   };
+
+$scope.restaurants = [
+  'post 1',
+  'post 2',
+  'post 3',
+  'post 4',
+  'post 5'
+];
+  
 })
 
 
@@ -243,6 +253,7 @@ angular.module('starter.controllers', ['ngOpenFB'])
                          "imageurl":"img/restaurants/mozzeroni.png"
                     }
   ]; */
+
 })
 
 

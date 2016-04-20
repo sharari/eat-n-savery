@@ -25,7 +25,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'ngCordov
     db = $cordovaSQLite.openDB({name: "eat.db"});
     $cordovaSQLite.execute(db, "CREATE TABLE IF NOT EXISTS restaurantprofiles (restaurant text primary key, id text, imageurl text, socialmedia1 text, socialmedia2 text, menuurl text)");
   });
-})
+
+	
+  
+ })
+
+
+	
   .factory('RestaurantsMasterService', function () {
 	
 	
@@ -108,6 +114,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'ngCordov
       return restaurants[2].id;
     }
   };
+
+  
 })
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -197,4 +205,3 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngOpenFB', 'ngCordov
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/app/restaurants');
 });
-
