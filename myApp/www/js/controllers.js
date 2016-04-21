@@ -143,6 +143,33 @@ angular.module('SimpleRESTIonic.controllers', [])
 
     })
 
+		.controller('AppController', function($scope, $ionicSideMenuDelegate) {
+		  $scope.toggleLeft = function() {
+			$ionicSideMenuDelegate.toggleLeft();
+		  };
+		})
+
+		.controller("HomeController", function($scope) {
+		  
+		})
+
+		.controller("CartController", function($scope) {
+		  
+		  $scope.data = {
+			items : []
+		  };
+		  
+		  for(var i = 0; i < 25; i++) {
+			$scope.data.items.push({
+			  id : i,
+			  label : "Item " + i
+			})
+		  }
+		  
+		})
+
+
+
     .controller('RestaurantsCtrl', function (RestaurantsModel, $rootScope) {
         var vm = this;
 

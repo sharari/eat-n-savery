@@ -39,6 +39,20 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
                 abstract: true,
                 templateUrl: 'templates/tabs.html'
             })
+			.state('app', {
+			  url: "/app",
+			  abstract: true,
+			  templateUrl: "templates/menu.html"
+			})
+			.state('app.restaurants', {
+			  url: "/home",
+				views: {
+					'appContent': {
+						templateUrl: 'templates/restaurants.html',
+						controller: 'RestaurantsCtrl as vm'
+					}
+				}
+			})
             .state('tab.dashboard', {
                 url: '/dashboard',
                 views: {
@@ -66,9 +80,7 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
                     }
                 }
             });
-
-        $urlRouterProvider.otherwise('/tabs/restaurants');
-
+		$urlRouterProvider.otherwise("/app/home");
         $httpProvider.interceptors.push('APIInterceptor');
     })
 
