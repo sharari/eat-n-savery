@@ -19,6 +19,7 @@ angular.module('SimpleRESTIonic.controllers', [])
 
         function onLogin(){
             $rootScope.$broadcast('authorized');
+			//set logged in so stuff should be editable
             $state.go('tab.dashboard');
         }
 
