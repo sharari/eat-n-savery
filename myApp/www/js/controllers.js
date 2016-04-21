@@ -178,7 +178,7 @@ angular.module('SimpleRESTIonic.controllers', [])
         }
 
         function initCreateForm() {
-            vm.newObject = {name: '', description: '', socialmedia: '', socialmedia2: ''};
+            vm.newObject = {name: '', info: '', socialmedia: '', socialmedia2: ''};
         }
 
         function setEdited(object) {
