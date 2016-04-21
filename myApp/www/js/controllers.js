@@ -20,6 +20,8 @@ angular.module('SimpleRESTIonic.controllers', [])
         function onLogin(){
             $rootScope.$broadcast('authorized');
 			//set logged in so stuff should be editable
+			angular.element(document.getElementById("loggedin")).addClass('ng-hide');
+			angular.element(document.getElementById("loggedout")).removeClass('ng-hide');
             $state.go('tab.dashboard');
         }
 
