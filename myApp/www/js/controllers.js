@@ -153,7 +153,7 @@ angular.module('SimpleRESTIonic.controllers', [])
 		  
 		})
 
-		.controller("CartController", function($scope) {
+		.controller("MenuController", function($scope) {
 		  
 		  $scope.data = {
 			items : []
