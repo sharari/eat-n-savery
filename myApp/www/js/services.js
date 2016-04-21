@@ -1,5 +1,9 @@
 angular.module('SimpleRESTIonic.services', [])
-
+	.factory('GlobalStuff', function() {
+	  return {
+		  isLoggedIn : 'false'
+	  };
+	})
     .service('APIInterceptor', function ($rootScope, $q) {
         var service = this;
 

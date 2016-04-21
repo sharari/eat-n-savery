@@ -76,17 +76,18 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
 
         function unauthorized() {
             console.log("user is unauthorized, sending to login");
+			$rootScope.isLoggedIn = true;
             $state.go('tab.login');
         }
 
         function signout() {
+			$rootScope.isLoggedIn = false;
             LoginService.signout();
         }
 
         $rootScope.$on('unauthorized', function () {
             unauthorized();
         });
-
         $rootScope.$on('$stateChangeSuccess', function (event, toState) {
             if (toState.name == 'tab.login') {
                 signout();

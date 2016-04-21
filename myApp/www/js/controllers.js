@@ -1,5 +1,4 @@
 angular.module('SimpleRESTIonic.controllers', [])
-
     .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService) {
         var login = this;
 
@@ -20,11 +19,17 @@ angular.module('SimpleRESTIonic.controllers', [])
         function onLogin(){
             $rootScope.$broadcast('authorized');
 			//set logged in so stuff should be editable
+			$rootScope.isLoggedIn = GlobalStuff.isLoggedIn;
+			checkIsLoggedIn();
 			angular.element(document.getElementById("loggedin")).addClass('ng-hide');
 			angular.element(document.getElementById("loggedout")).removeClass('ng-hide');
+			$rootScope.isLoggedIn = true;
+            checkIsLoggedIn();
             $state.go('tab.dashboard');
         }
-
+        function checkIsLoggedIn() {
+            console.log($rootScope.isLoggedIn);
+        }
         function signout() {
             LoginService.signout()
                 .then(function () {
