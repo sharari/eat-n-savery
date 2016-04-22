@@ -37,38 +37,41 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
             .state('tab', {
                 url: '/tabs',
                 abstract: true,
-                templateUrl: 'templates/tabs.html'
+                templateUrl: 'templates/menu.html'
             })
-            .state('tab.dashboard', {
-                url: '/dashboard',
-                views: {
-                    'tab-dashboard': {
-                        templateUrl: 'templates/tab-dashboard.html',
-                        controller: 'DashboardCtrl as vm'
-                    }
-                }
-            })
-            .state('tab.restaurants', {
-                url: '/restaurants',
-                views: {
-                    'restaurants': {
-                        templateUrl: 'templates/restaurants.html',
-                        controller: 'RestaurantsCtrl as vm'
-                    }
-                }
-            })
-            .state('tab.login', {
-                url: '/login',
-                views: {
-                    'tab-login': {
+			.state('app', {
+			  url: "/app",
+			  abstract: true,
+			  templateUrl: "templates/menu.html"
+			})
+			.state('app.restaurants', {
+			  url: "/home",
+				views: {
+					'appContent': {
+						templateUrl: 'templates/restaurants.html',
+						controller: 'RestaurantsCtrl as vm'
+					}
+				}
+			})
+			.state('app.login', {
+			  url: "/login",
+				views: {
+					'appContent': {
                         templateUrl: 'templates/tab-login.html',
                         controller: 'LoginCtrl as login'
-                    }
-                }
+					}
+				}
+			})
+			.state('app.discounts', {
+			  url: "/discounts",
+				views: {
+					'appContent': {
+                        templateUrl: 'templates/tab-dashboard.html',
+                        controller: 'DashboardCtrl as vm'
+					}
+				}
             });
-
-        $urlRouterProvider.otherwise('/tabs/restaurants');
-
+		$urlRouterProvider.otherwise("/app/home");
         $httpProvider.interceptors.push('APIInterceptor');
     })
 
@@ -76,17 +79,18 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
 
         function unauthorized() {
             console.log("user is unauthorized, sending to login");
+			$rootScope.isLoggedIn = true;
             $state.go('tab.login');
         }
 
         function signout() {
+			$rootScope.isLoggedIn = false;
             LoginService.signout();
         }
 
         $rootScope.$on('unauthorized', function () {
             unauthorized();
         });
-
         $rootScope.$on('$stateChangeSuccess', function (event, toState) {
             if (toState.name == 'tab.login') {
                 signout();
