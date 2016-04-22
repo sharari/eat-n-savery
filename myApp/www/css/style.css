@@ -19,3 +19,25 @@
 .item-icon-left .icon, .item-icon-right .icon {
 	font-size: 22px;
 }
+
+/* NEW CSS */
+.title{		/*header bar */
+	background-color: #ed4949;	/*red*/
+	background-image: url(../img/survewhite.png);4
+}
+
+.bar.bar-dark{
+	background-color: #ed4949;	/*red*/
+}
+
+.bar-grey{
+	background-color: #ed4949;	/*red*/	
+}
+
+ion-content{
+	background-color: #606060;	/*grey*/
+}
+
+.item-complex .item-content, .item-radio .item-content{
+	background-color: #97dbcc;
+}

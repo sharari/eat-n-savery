@@ -7,8 +7,7 @@
     </ion-nav-bar>
 
     <ion-nav-buttons side="left">
-      <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
-      </button>
+      <button class="button button-icon button-clear ion-navicon" menu-toggle="left"></button>
     </ion-nav-buttons>
 	
     <ion-nav-view name="menuContent"></ion-nav-view>
@@ -24,8 +23,7 @@
             </ion-nav-back-button>
           </ion-nav-bar>
           <ion-nav-buttons side="left">
-            <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()">
-            </button>
+            <button class="button button-icon button-clear ion-navicon" ng-click="toggleLeft()" ></button>
           </ion-nav-buttons>
           <ion-nav-view name="appContent"></ion-nav-view>
         </ion-side-menu-content> 
@@ -39,7 +37,7 @@
   <!--- LIST 1: Logged Out -->
       <ion-list id="loggedin" class="loggedin">
         <ion-item menu-close ng-click="login()">
-        <ion-item menu-close href="#/app/login">
+        <ion-item menu-close href="#/app/login" class="loginButton">
           Login
         </ion-item>
         <ion-item menu-close href="#/app/home">
