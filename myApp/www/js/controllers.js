@@ -1,5 +1,8 @@
 angular.module('SimpleRESTIonic.controllers', [])
-    .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService) {
+
+	.value('isLoggedIn', false)
+
+    .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService, isLoggedIn) {
         var login = this;
 
         function signin() {
@@ -19,16 +22,18 @@ angular.module('SimpleRESTIonic.controllers', [])
         function onLogin(){
             $rootScope.$broadcast('authorized');
 			//set logged in so stuff should be editable
-			$rootScope.isLoggedIn = GlobalStuff.isLoggedIn;
+			//$rootScope.isLoggedIn = GlobalStuff.isLoggedIn;
 			checkIsLoggedIn();
-			angular.element(document.getElementById("loggedin")).addClass('ng-hide');
-			angular.element(document.getElementById("loggedout")).removeClass('ng-hide');
-			$rootScope.isLoggedIn = true;
-            checkIsLoggedIn();
-            $state.go('tab.dashboard');
+		//	angular.element(document.getElementById("loggedin")).addClass('ng-hide');
+//			angular.element(document.getElementById("loggedout")).removeClass('ng-hide');
+			//$rootScope.isLoggedIn = true;
+            $state.go('app.restaurants');
         }
         function checkIsLoggedIn() {
-            console.log($rootScope.isLoggedIn);
+			console.log("pre change" + isLoggedIn);
+            isLoggedIn=true;
+			$rootScope.logIsLog=isLoggedIn;
+			console.log("post change" + isLoggedIn);
         }
         function signout() {
             LoginService.signout()

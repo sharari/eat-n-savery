@@ -6,6 +6,7 @@
 angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controllers', 'SimpleRESTIonic.services'])
 	 //Update Angular config section in /www/js/app.js
 
+
 	  .config(function (BackandProvider, $stateProvider, $urlRouterProvider, $httpProvider) {
 		  BackandProvider.setAppName('surve');
 		  BackandProvider.setSignUpToken('3b06e193-9c7a-4f0b-beae-ee6ffd260ceb');
