@@ -67,12 +67,17 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
 			  url: "/discounts",
 				views: {
 					'appContent': {
-                        templateUrl: 'templates/discounts.html',
+                        templateUrl: 'templates/discounts_user.html',
                         controller: 'DashboardCtrl as vm'
 					}
 				}
             });
+		// $urlRouterProvider.
+			// .when('/person/diner', {templateUrl: 'templates/dashboard-user.html'})
+			// .when('/person/user', {templateUrl: 'templates/dashboard.html'})
+			// .when('/person/user/:userid', {templateUrl: 'templates/dashboard.html'})
 		$urlRouterProvider.otherwise("/app/home");
+			
         $httpProvider.interceptors.push('APIInterceptor');
     })
 

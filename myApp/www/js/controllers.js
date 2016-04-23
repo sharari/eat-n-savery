@@ -2,8 +2,11 @@ angular.module('SimpleRESTIonic.controllers', [])
 
 	.value('isLoggedIn', window.user)
 
-    .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService, isLoggedIn) {
-        var login = this;
+    .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService, User) {
+		
+
+
+		var login = this;
 
         function signin() {
             LoginService.signin(login.email, login.password)
