@@ -24,6 +24,9 @@
 .title{		/*header bar */
 	background-color: #ed4949;	/*red*/
 	background-image: url("../img/survewhite.png");
+	background-repeat: no-repeat;
+	background-size: 130px 40px;
+	background-position: center;
 }
 
 .bar.bar-dark{
@@ -46,6 +49,19 @@ ion-content{
 	background-color: #97dbcc;	/*mint*/
 }
 
-.bar.bar-dark .title{
-	background-image: url(../img/survewhite.png);
+.subtitle{		/*subheader bar*/
+	position: absolute;
+	top: 0;
+	right: 0;
+    left: 0;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0 10px;
+    min-width: 30px;
+    height: 43px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 17px;
+    line-height: 44px;
 }
