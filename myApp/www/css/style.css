@@ -23,7 +23,7 @@
 /* NEW CSS */
 .title{		/*header bar */
 	background-color: #ed4949;	/*red*/
-	background-image: url(../img/survewhite.png);4
+	background-image: url("../img/survewhite.png");
 }
 
 .bar.bar-dark{
@@ -39,5 +39,13 @@ ion-content{
 }
 
 .item-complex .item-content, .item-radio .item-content{
-	background-color: #97dbcc;
+	background-color: #97dbcc;	/*mint*/
+}
+
+.item{		/*menu background*/
+	background-color: #97dbcc;	/*mint*/
+}
+
+.bar.bar-dark .title{
+	background-image: url(../img/survewhite.png);
 }

@@ -6,7 +6,7 @@
                 <span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>
                 <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add Item</i></span>
             </div>
-            <div class="bar bar-subheader">
+            <!--<div class="bar bar-subheader">
                 <div class="list card" ng-repeat="object in vm.data"
                      ng-class="{'active':vm.isCurrent(object.id)}">
                     <div class="item item-icon-right item-icon-left">
@@ -19,7 +19,16 @@
                         {{object.socialmedia}}
                     </div>
                 </div>
-            </div>
+            </div>-->
+            <ion-list>
+                <ion-item ng-repeat="restaurant in restaurants" class="restaurant-list" ui-sref="app.single({restaurantsId: restaurant.id})">
+                    <div class="restaurant-item" ng-style="{'background-image': 'url(' + restaurant.imageurl + ')' }" style="height:200px; width:100%;">
+                        <h3 class="restaurant-name">{{restaurant.title}}</h3>
+            <img src="{{playlist.imageurl}}" class="image-main" style="height:200px; width:100%;" >
+                    </div>
+    
+                </ion-item>
+            </ion-list>
         </ion-content>
     </div>
     <div ng-if="vm.isCreating">
