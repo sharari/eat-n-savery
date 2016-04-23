@@ -67,7 +67,7 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
 			  url: "/discounts",
 				views: {
 					'appContent': {
-                        templateUrl: 'templates/tab-dashboard.html',
+                        templateUrl: 'templates/discounts.html',
                         controller: 'DashboardCtrl as vm'
 					}
 				}
