@@ -49,7 +49,7 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
 			  url: "/home",
 				views: {
 					'appContent': {
-						templateUrl: 'templates/restaurants.html',
+						templateUrl: 'templates/restaurants_user.html',
 						controller: 'RestaurantsCtrl as vm'
 					}
 				}
@@ -58,7 +58,7 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
 			  url: "/login",
 				views: {
 					'appContent': {
-                        templateUrl: 'templates/tab-login.html',
+                        templateUrl: 'templates/login.html',
                         controller: 'LoginCtrl as login'
 					}
 				}
