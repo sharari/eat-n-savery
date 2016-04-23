@@ -65,3 +65,12 @@ ion-content{
     font-size: 17px;
     line-height: 44px;
 }
+
+.loginText{		/*login.html*/
+	text-align: center;
+  	color: #97dbcc;		/*mint*/
+}
+
+#loginInput{
+	background-color: #f3f4e8;
+}
