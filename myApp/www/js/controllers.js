@@ -1,6 +1,6 @@
 angular.module('SimpleRESTIonic.controllers', [])
 
-	.value('isLoggedIn', false)
+	.value('isLoggedIn', window.user)
 
     .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService, isLoggedIn) {
         var login = this;
@@ -179,7 +179,7 @@ angular.module('SimpleRESTIonic.controllers', [])
         var vm = this;
 
         function goToBackand() {
-            window.location = 'http://docs.backand.com';
+            window.location = 'http://surve.deals';
         }
 
         function getAll() {
