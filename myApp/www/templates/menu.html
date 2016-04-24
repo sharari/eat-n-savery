@@ -34,34 +34,36 @@
     </ion-header-bar>
     <ion-content>
 	
-	<!--- LIST 1: Logged Out -->
-      <ion-list id="loggedin" class="loggedin">
+      <ion-list ng-controller="LoginCtrl" id="loggedin" class="loggedin">
 <!--         <ion-item menu-close ng-click="login()">
- -->        <ion-item menu-close href="#/app/login" class="loginButton">
-          Login
-        </ion-item>
-        <ion-item menu-close href="#/app/home">
-          Restaurants
-        </ion-item>
-        <ion-item menu-close href="#/app/discounts">
-          Discounts
-        </ion-item>
-      </ion-list>
-
-	<!--- LIST 2: Logged In -->
-      <ion-list  id="loggedout" class="loggedout ng-hide">
- <!--        <ion-item menu-close ng-click="login()">
-          Logout
-        </ion-item>
-        <ion-item menu-close href="#/app/submit">
-          Submissions
-        </ion-item>
-        <ion-item menu-close href="#/app/settings">
-          Settings
-        </ion-item>
-        <ion-item menu-close href="#/app/restaurants/1">
-          My Restaurant
-        </ion-item> -->
+ -->
+	<!--- LIST 1: Logged Out BASIC USER VIEW -->
+		<div ng-if="!isAdmin">
+			<ion-item menu-close href="#/app/login" class="loginButton">
+			  Login
+			</ion-item>
+			<ion-item menu-close href="#/app/home">
+			  Restaurants
+			</ion-item>
+			<ion-item menu-close href="#/app/discounts">
+			  Discounts
+			</ion-item>
+		</div>
+	<!--- LIST 2: Logged In ADMIN VIEW-->
+      <div ng-if="isAdmin">
+			<ion-item menu-close href="#/app/login" class="loginButton">
+			  Logout
+			</ion-item>
+			<ion-item menu-close href="#/app/discountsowner">
+			  Submissions
+			</ion-item>
+			<ion-item menu-close href="#/app/profile">
+			  Settings
+			</ion-item>
+			<ion-item menu-close href="#/app/restaurantowner">
+			  My Restaurant
+			</ion-item>
+		</div>
       </ion-list>
     </ion-content>
   </ion-side-menu>

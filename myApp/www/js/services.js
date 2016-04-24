@@ -1,4 +1,4 @@
-angular.module('SimpleRESTIonic.services', ['ui.router'])
+angular.module('SimpleRESTIonic.services', [])
 	.factory('GlobalStuff', function() {
 	  return {
 		  isLoggedIn : 'false'

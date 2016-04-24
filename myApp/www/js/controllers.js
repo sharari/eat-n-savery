@@ -1,13 +1,28 @@
 angular.module('SimpleRESTIonic.controllers', [])
 
-	.value('isLoggedIn', window.user)
+	.value('UserRole', 'StandardUser')
+	// .value('isLoggedIn', window.user)
 
-    .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService, User) {
-		
-
-
+    // .controller('AccountCtrl', function (Backand, $state, $rootScope) {
+			// $scope.IsAdmin = function(){
+				// return $scope.UserRole == "Admin";
+			// }
+			// $scope.IsUser = function(){
+				// return $scope.UserRole == "StandardUser";
+			// }
+	// })
+    .controller('LoginCtrl', function (Backand, $state, $rootScope, LoginService) {
 		var login = this;
+		$rootScope.UserRole == "StandardUser";
+		$rootScope.isAdmin == false;
 
+			// $rootscope.IsAdmin = function(){
+				// return $rootscope.UserRole == "Admin";
+			// }
+			// $rootscope.IsUser = function(){
+				// return $rootscope.UserRole == "StandardUser";
+			// }
+			
         function signin() {
             LoginService.signin(login.email, login.password)
                 .then(function () {
@@ -24,6 +39,7 @@ angular.module('SimpleRESTIonic.controllers', [])
 
         function onLogin(){
             $rootScope.$broadcast('authorized');
+			$rootScope.isAdmin = true;
 			//set logged in so stuff should be editable
 			//$rootScope.isLoggedIn = GlobalStuff.isLoggedIn;
 			checkIsLoggedIn();
@@ -33,10 +49,8 @@ angular.module('SimpleRESTIonic.controllers', [])
             $state.go('app.restaurants');
         }
         function checkIsLoggedIn() {
-			console.log("pre change" + isLoggedIn);
-            isLoggedIn=true;
-			$rootScope.logIsLog=isLoggedIn;
-			console.log("post change" + isLoggedIn);
+			// console.log("pre change" + isLoggedIn);
+			// console.log("post change" + isLoggedIn);
         }
         function signout() {
             LoginService.signout()
