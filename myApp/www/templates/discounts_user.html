@@ -2,18 +2,14 @@
     <div ng-if="!vm.isCreating && !vm.isEditing">
         <ion-content class="padding has-header">
             <!-- LIST -->
-            <div class="bar bar-header">
+            <div class="">
                 <span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>
-                <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add Item</i></span>
             </div>
-            <div class="bar bar-subheader">
+            <div class=" bar-subheader">
                 <div class="list card" ng-repeat="object in vm.data"
                      ng-class="{'active':vm.isCurrent(object.id)}">
                     <div class="item item-icon-right item-icon-left">
-                        <i class="ion-compose icon" ng-click="vm.setEdited(object)"></i>
-
                         <h2 class="text-center">{{object.name}}</h2>
-                        <i class="icon ion-close-round" ng-click="vm.delete(object.id)"></i>
                     </div>
                     <div class="item item-body">
                         {{object.description}}
