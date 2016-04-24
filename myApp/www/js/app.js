@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'SimpleRESTIonic' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controllers', 'SimpleRESTIonic.services'])
+angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controllers', 'SimpleRESTIonic.services', 'ui.router'])
 	 //Update Angular config section in /www/js/app.js
 
 
@@ -34,25 +34,10 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
         BackandProvider.setAnonymousToken('0e9aae6f-4e74-431b-8e3c-866d99901cc7'); // token is for anonymous login. see http://docs.backand.com/en/latest/apidocs/security/index.html#anonymous-access
 
         $stateProvider
-            // setup an abstract state for the tabs directive
-            .state('tab', {
-                url: '/tabs',
-                abstract: true,
-                templateUrl: 'templates/menu.html'
-            })
 			.state('app', {
 			  url: "/app",
 			  abstract: true,
 			  templateUrl: "templates/menu.html"
-			})
-			.state('app.restaurants', {
-			  url: "/home",
-				views: {
-					'appContent': {
-						templateUrl: 'templates/restaurants_user.html',
-						controller: 'RestaurantsCtrl as vm'
-					}
-				}
 			})
 			.state('app.login', {
 			  url: "/login",
@@ -63,6 +48,32 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
 					}
 				}
 			})
+			.state('app.profile', {
+			  url: "/profie",
+				views: {
+					'appContent': {
+                        templateUrl: 'templates/profile.html'
+					}
+				}
+			})
+			.state('app.restaurants', {
+			  url: "/home",
+				views: {
+					'appContent': {
+						templateUrl: 'templates/restaurants_user.html',
+						controller: 'RestaurantsCtrl as vm'
+					}
+				}
+			})
+			.state('app.restaurant', {
+				url: '/restaurant/:id',
+				views: {
+				  'appContent': {
+					templateUrl: 'templates/restaurant.html',
+					controller: 'RestaurantsCtrl as vm'
+				  }
+				}
+			})
 			.state('app.discounts', {
 			  url: "/discounts",
 				views: {
@@ -71,13 +82,30 @@ angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controll
                         controller: 'DashboardCtrl as vm'
 					}
 				}
+            })
+			.state('app.restaurantowner', {
+			  url: "/restaurantowner",
+				views: {
+					'appContent': {
+						templateUrl: 'templates/restaurant_owner.html',
+						controller: 'RestaurantsCtrl as vm'
+					}
+				}
+			})
+			.state('app.discountsowner', {
+			  url: "/discountsowner",
+				views: {
+					'appContent': {
+                        templateUrl: 'templates/discounts_owner.html',
+                        controller: 'DashboardCtrl as vm'
+					}
+				}
             });
 		// $urlRouterProvider.
 			// .when('/person/diner', {templateUrl: 'templates/dashboard-user.html'})
 			// .when('/person/user', {templateUrl: 'templates/dashboard.html'})
 			// .when('/person/user/:userid', {templateUrl: 'templates/dashboard.html'})
-		$urlRouterProvider.otherwise("/app/home");
-			
+		$urlRouterProvider.otherwise("/app/home");	
         $httpProvider.interceptors.push('APIInterceptor');
     })
 
