@@ -66,11 +66,20 @@ ion-content{
     line-height: 44px;
 }
 
-.loginText{		/*login.html*/
+/*login.html*/
+.loginText{		
 	text-align: center;
   	color: #97dbcc;		/*mint*/
 }
 
 #loginInput{
 	background-color: #f3f4e8;
+}
+
+.restaurant-item{
+	    height: 200px;
+    width: 100%;
+    background-image: url("img/restaurants/mozzeroni.png");
+    background-size: 1000px 300px;
+    background-repeat: no-repeat;
 }
