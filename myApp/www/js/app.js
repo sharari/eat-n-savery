@@ -3,7 +3,7 @@
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'SimpleRESTIonic' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
-angular.module('SimpleRESTIonic', ['ionic', 'backand', 'SimpleRESTIonic.controllers', 'SimpleRESTIonic.services', 'ui.router'])
+angular.module('SimpleRESTIonic', ['ionic', 'ngCordova','backand', 'SimpleRESTIonic.controllers', 'SimpleRESTIonic.services', 'ui.router'])
 	 //Update Angular config section in /www/js/app.js
 
 
