@@ -164,8 +164,7 @@ angular.module('SimpleRESTIonic.controllers', [])
         getAll();
 
     })
-
-		.controller('AppController', function($scope, $ionicSideMenuDelegate) {
+	.controller('AppController', function($scope, $ionicSideMenuDelegate) {
 		  $scope.toggleLeft = function() {
 			$ionicSideMenuDelegate.toggleLeft();
 		  };
@@ -189,9 +188,9 @@ angular.module('SimpleRESTIonic.controllers', [])
 		  }
 		  
 		})
-
-
-
+	.controller('RestaurantCtrl', function(RestaurantsModel, $scope, $routeParams) {
+		$scope.current = RestaurantsModel.get($routeParams.id, object);
+	})
     .controller('RestaurantsCtrl', function (RestaurantsModel, $scope, $rootScope, $cordovaGeolocation) {
         var vm = this;
 
