@@ -7,10 +7,10 @@
                  <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add Item</i></span>
             </div>
  -->
-                <div class="" ng-repeat="object in vm.data"
+                <div class="restaurant-list" ng-repeat="object in vm.data"
                      ng-class="{'active':vm.isCurrent(object.id)}" class="restaurant-list" ui-sref="app.restaurant({id : object.id})">
 					 
-                    <div class="item restaurant-item" ng-style="{'background-image': 'url(' + object.imageurl + ')' }" style="height:200px; width:100%;">
+                    <div class="item restaurant-item" ng-style="{'background-image': 'url(' + object.imageurl + ')' }" style="height:200px; width:100%; opacity:0.6;">
 
 <!-- 						<div class="restaurant-item" ng-style="{'background-image': 'url(' + restaurant.imageurl + ')' }" style="height:200px; width:100%;">
  -->

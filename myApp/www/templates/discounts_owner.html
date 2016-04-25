@@ -4,7 +4,7 @@
             <!-- LIST -->
             <div class="bar bar-header">
                 <!--<span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>-->
-                <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add Item</i></span>
+                <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add New Item</i></span>
             </div>
 
             <div class="bar bar-subheader">
@@ -48,7 +48,7 @@
         <ion-content class="padding has-header">
             <!-- CREATING -->
             <div class="bar bar-header">
-                <h2 class="subtitle">Create Item</h2>
+                <h2 class="subtitle">Create New Item</h2>
                 <span ng-click="vm.cancelCreate()" class="cancel-create">Cancel</span>
             </div>
             <div class="bar bar-subheader">
@@ -63,9 +63,11 @@
                         </label>
                         <label class="item item-input item-stacked-label">
                             <span class="input-label">Description</span>
-                        <textarea placeholder="Comments" class="form-control"
-                                  ng-model="vm.newObject.description"
-                                  placeholder="Enter description"></textarea>
+                            <textarea placeholder="Enter description of discount" class="form-control" ng-model="vm.newObject.description" placeholder="Enter description"></textarea>
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Expiration Time</span>
+                            <textarea placeholder="Enter a time" class="form-control" ng-model="vm.newObject.description" placeholder="Enter a time"></textarea>
                         </label>
                     </div>
                     <button class="button button-block button-positive" type="submit">Create</button>

@@ -104,10 +104,17 @@ ion-content{
     background-image: url("img/restaurants/mozzeroni.png");
     background-size: 800px 300px;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    /*opacity: 0.6;*/
 }
 
 .restaurant-name{
+	font-size: xx-large !important;
+    color: white !important;
+    font-family: 'Pacifico', cursive;
+    float: left;
+}
+
+.restaurant-list .item-content .restaurant-name{
 	font-size: xx-large !important;
     color: white !important;
     font-family: 'Pacifico', cursive;
@@ -152,4 +159,11 @@ margin-top:100px;
 /*discounts_owner.html*/
 .discountsOwner{
 	top: 50px;
+}
+
+/*restaurant_owner.html*/
+.restDescriptionOwner{
+  padding: 10px;
+  text-align: center;
+  color: #97dbcc;	/*green*/
 }
