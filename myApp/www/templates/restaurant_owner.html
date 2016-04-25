@@ -3,11 +3,11 @@
         <ion-content class="padding has-header">
             <!-- LIST -->
             <div class="bar bar-header">
-                <span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>
-                <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add Item</i></span>
+                <!--<span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>-->
+                <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'>Edit Restaurant</i></span>
             </div>
-            <div class="bar bar-subheader">
-				<h2>RESTAURANT OWNER</h2>
+            <!--<div class="bar bar-subheader">-->
+            <div>
                 <div class="list card" ng-repeat="object in vm.data"
                      ng-class="{'active':vm.isCurrent(object.id)}">
                     <div class="item item-icon-right item-icon-left">
@@ -20,7 +20,27 @@
                     </div>
                 </div>
             </div>
-            <!--<ion-list>
+
+            <div><ion-content scroll="false">
+            <div class="map">
+                <div id="map" data-tap-disabled="true"></div>
+            </div>
+        <div class="restDescription">
+            <p><b>{{current.name}}</b><br>658 Park Ave.<br>Rochester, NY 14607<br>www.jinesrestaurant.com</p>
+            
+            <p>
+                <b>Business Hours:</b>
+                <br>Monday-Saturday: 7AM - 10PM<br>
+                Sunday: 7AM - 8PM<br><br>
+                <b>Description:</b>
+                All day breakfast and Sunday brunch draw crowds to this friendly Greek diner with sidewalk seating
+            </p>
+        </div>
+    </ion-content>
+
+
+            
+            <ion-list>
                 <ion-item ng-repeat="restaurant in restaurants" class="restaurant-list" ui-sref="app.single({restaurantsId: restaurant.id})">
                     <div class="restaurant-item" ng-style="{'background-image': 'url(' + restaurant.imageurl + ')' }" style="height:200px; width:100%;">
                         <h3 class="restaurant-name">{{restaurant.title}}</h3>
@@ -28,7 +48,7 @@
                     </div>
     
                 </ion-item>
-            </ion-list>-->
+            </ion-list>
         </ion-content>
     </div>
     <div ng-if="vm.isCreating">
