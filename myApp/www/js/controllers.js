@@ -164,8 +164,7 @@ angular.module('SimpleRESTIonic.controllers', [])
         getAll();
 
     })
-
-		.controller('AppController', function($scope, $ionicSideMenuDelegate) {
+	.controller('AppController', function($scope, $ionicSideMenuDelegate) {
 		  $scope.toggleLeft = function() {
 			$ionicSideMenuDelegate.toggleLeft();
 		  };
@@ -189,10 +188,10 @@ angular.module('SimpleRESTIonic.controllers', [])
 		  }
 		  
 		})
-
-
-
-    .controller('RestaurantsCtrl', function (RestaurantsModel, $rootScope) {
+	.controller('RestaurantCtrl', function(RestaurantsModel, $scope, $routeParams) {
+		$scope.current = RestaurantsModel.get($routeParams.id, object);
+	})
+    .controller('RestaurantsCtrl', function (RestaurantsModel, $scope, $rootScope, $cordovaGeolocation) {
         var vm = this;
 
         function goToBackand() {
@@ -257,8 +256,9 @@ angular.module('SimpleRESTIonic.controllers', [])
             vm.isCreating = false;
         }
 
-        /*$cordovaGeolocation.getCurrentPosition(options).then(function(position){
- 
+			var options = {timeout: 10000, enableHighAccuracy: true};
+        $cordovaGeolocation.getCurrentPosition(options).then(function(position){
+
             var latLng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
  
     var mapOptions = {
@@ -269,7 +269,7 @@ angular.module('SimpleRESTIonic.controllers', [])
     $scope.map = new google.maps.Map(document.getElementById("map"), mapOptions);
   }, function(error){
     console.log("Could not get location");
-  });  */
+  }); 
 
         vm.objects = [];
         vm.edited = null;
