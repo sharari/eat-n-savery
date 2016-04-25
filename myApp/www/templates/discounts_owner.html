@@ -3,10 +3,19 @@
         <ion-content class="padding has-header">
             <!-- LIST -->
             <div class="bar bar-header">
-                <span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>
+                <!--<span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>-->
                 <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add Item</i></span>
             </div>
+
             <div class="bar bar-subheader">
+                <div class="item item-thumbnail-left" ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
+                    <img src="img/restaurants/jines.png">
+                    <h2>{{object.name}}</h2><span id="itemDescPrice">${{object.cost}}</span>
+                    <p>Restuarant Name</p>
+                    <p>{{object.expiration}}</p>
+                </div>
+            </div>
+            <!--<div class="bar bar-subheader">
                 <div class="list card" ng-repeat="object in vm.data"
                      ng-class="{'active':vm.isCurrent(object.id)}">
                     <div class="item item-icon-right item-icon-left">
@@ -19,7 +28,20 @@
                         {{object.description}}
                     </div>
                 </div>
-            </div>
+            </div>-->
+
+            <!--<div class="list discountsOwner">
+                <div class="item">
+                    <p>Test</p>
+                </div>
+                <div class="item item-thumbnail-left" ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
+                    <img src="img/restaurants/jines.png">
+                    <h2>{{object.name}}</h2><span id="itemDescPrice">${{object.cost}}</span>
+                    <p>Restuarant Name</p>
+                    <p>{{object.expiration}}</p>
+
+                </div>
+            </div>-->
         </ion-content>
     </div>
     <div ng-if="vm.isCreating">

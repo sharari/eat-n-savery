@@ -70,6 +70,7 @@ ion-content{
 .loginText{		
 	text-align: center;
   	color: #97dbcc;		/*green*/
+  	padding-top: 20px;
 }
 
 #loginInput{
@@ -81,6 +82,19 @@ ion-content{
     display: block;
     height: 100px;
     top: 100px;
+    padding-bottom: 15px;
+}
+
+.button.button-positive {
+    border-color: #97dbcc;
+    background-color: #97dbcc;
+    color: #606060;
+}
+
+.button.button-positive:active{
+	border-color: #97dbcc;
+    background-color: #97dbcc;
+    color: #fff;
 }
 
 /*restaurants_user.html*/
@@ -94,9 +108,10 @@ ion-content{
 }
 
 .restaurant-name{
-	font-size: x-large !important;
-	color: black !important;
-	font-family: 'Pacifico', cursive;
+	font-size: xx-large !important;
+    color: white !important;
+    font-family: 'Pacifico', cursive;
+    float: left;
 }
 
 /*restuarant.html*/
@@ -124,6 +139,7 @@ ion-content{
 	float: right;
 	font-weight: bold;
 	color: #ed4949;		/*red*/
+	font-size: x-large;
 }
 
 .tablething{
@@ -131,4 +147,9 @@ margin-top:100px;
 }
 .editlist{
 	position:absolute;
+}
+
+/*discounts_owner.html*/
+.discountsOwner{
+	top: 50px;
 }
