@@ -265,8 +265,41 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
+/*     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+ */    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.partners-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #000;
+/*     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+ */    background-color: #606060;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.functionality-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+/*     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+ */    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.about-section {
+    width: 100%;
+    padding: 50px 0;
+    color: #fff;
+/*     background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+ */    background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -397,4 +430,28 @@ body {
 .name{
 	color:black;
 	margin-bottom: 5px;
+}
+.sizeimg{
+	width: 200px;
+}
+.sizePimg{
+	width: 150px;
+	padding:10px;
+}
+.bulletleft{
+	width: 10%;
+}
+.bulletright{
+	width: 60%;
+}
+.sizeIcon{
+	width: 100px;
+	background-color: gray;
+	padding: 10px;
+}
+.listitem{
+	margin-top: 10px;
+}
+#meetourteam{
+	background-color: #97DBCC;
 }
