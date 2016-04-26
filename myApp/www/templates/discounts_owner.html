@@ -7,15 +7,25 @@
                 <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add New Item</i></span>
             </div>
 
-            <div class="bar bar-subheader">
-                <div class="item item-thumbnail-left" ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
-                    <img src="img/restaurants/jines.png">
-                    <h2>{{object.name}}</h2><span id="itemDescPrice">${{object.cost}}</span>
-                    <p>Restuarant Name</p>
-                    <p>{{object.expiration}}</p>
-                </div>
-            </div>
             <!--<div class="bar bar-subheader">
+			    <div class="list card" ng-repeat="object in vm.data">
+					<div class="item item-icon-right item-icon-left">
+						<i class="ion-compose icon" ng-click="vm.setEdited(object)"></i>
+					</div>
+						<img src="img/restaurants/jines.png">
+                        
+ 						
+ 						<h2>{{object.name}}</h2>
+ <p>Restuarant Name</p>
+						<p>{{object.expiration}}</p>
+ <span id="itemDescPrice">${{object.cost}}</span>
+						
+                        <h2 class="text-center">{{object.name}}</h2>
+                        <i class="icon ion-close-round" ng-click="vm.delete(object.id)"></i>
+                    
+                </div>
+            </div>-->
+            <div class="bar bar-subheader">
                 <div class="list card" ng-repeat="object in vm.data"
                      ng-class="{'active':vm.isCurrent(object.id)}">
                     <div class="item item-icon-right item-icon-left">
@@ -24,11 +34,17 @@
                         <h2 class="text-center">{{object.name}}</h2>
                         <i class="icon ion-close-round" ng-click="vm.delete(object.id)"></i>
                     </div>
-                    <div class="item item-body">
+                    <div class="item item-body item-icon-left">
+						<div class="leftalign">
+						<img src="img/restaurants/jines.png" class="ownerimage">
                         {{object.description}}
+						</div>
+						<p class="rightalign">
+							${{object.cost}}
+						</p>
                     </div>
                 </div>
-            </div>-->
+            </div>
 
             <!--<div class="list discountsOwner">
                 <div class="item">
@@ -66,12 +82,8 @@
                             <textarea placeholder="Enter description of discount" class="form-control" ng-model="vm.newObject.description" placeholder="Enter description"></textarea>
                         </label>
                         <label class="item item-input item-stacked-label">
-                            <span class="input-label">Expiration Time</span>
-                            <textarea placeholder="Enter a time" class="form-control" ng-model="vm.newObject.description" placeholder="Enter a time"></textarea>
-                        </label>
-                        <label class="item item-input item-stacked-label">
-                            <span class="input-label">Expiration Date</span>
-                            <input type="date">
+                            <span class="input-label">Cost (all entry should be numeric values)</span>
+                            <input type="text" class="form-control" ng-model="vm.newObject.cost" placeholder="Cost">
                         </label>
                     </div>
                     <button class="button button-block button-positive" type="submit">Create</button>
@@ -101,7 +113,36 @@
                     <textarea class="form-control"
                               ng-model="vm.edited.description"
                               placeholder="Enter description"></textarea>
-
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Cost</span>
+                            <input type="text" class="form-control"
+                                   ng-model="vm.edited.cost"
+                                   placeholder="Enter cost">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">timesensitive</span>
+                            <input type="text" class="form-control"
+                                   ng-model="vm.edited.timesensitive"
+                                   placeholder="Enter timesensitive">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">expiration</span>
+                            <input type="text" class="form-control"
+                                   ng-model="vm.edited.expiration"
+                                   placeholder="Enter name">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">Name</span>
+                            <input type="text" class="form-control"
+                                   ng-model="vm.edited.submittime"
+                                   placeholder="Enter submit time">
+                        </label>
+                        <label class="item item-input item-stacked-label">
+                            <span class="input-label">imageurl</span>
+                            <input type="text" class="form-control"
+                                   ng-model="vm.edited.name"
+                                   placeholder="Enter Image Name">
                         </label>
                     </div>
                     <button class="button button-block button-positive" type="submit">Save</button>
