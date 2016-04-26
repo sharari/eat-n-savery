@@ -112,6 +112,7 @@ ion-content{
     color: white !important;
     font-family: 'Pacifico', cursive;
     float: left;
+    text-shadow: 2px 2px #000;
 }
 
 .restaurant-list .item-content .restaurant-name{
@@ -139,6 +140,18 @@ ion-content{
 
 .restaurant .restDescription{
   text-align: center;
+}
+
+.phonecall{
+  text-decoration: none;
+  color: #97dbcc;
+}
+
+.button-outline.button-outline {
+    border-color: #97dbcc;    /*green*/
+    background: transparent;
+    color: #97dbcc;
+    margin: 10px;
 }
 
 /*discouunts_user.html*/
