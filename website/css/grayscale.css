@@ -440,9 +440,12 @@ body {
 }
 .bulletleft{
 	width: 10%;
+    float:left;
 }
 .bulletright{
 	width: 60%;
+    float:right;
+    text-align: left;
 }
 .sizeIcon{
 	width: 100px;
