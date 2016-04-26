@@ -447,6 +447,12 @@ body {
     float:right;
     text-align: left;
 }
+
+td, th {
+    padding: 0 !important;
+    text-align: left !important;
+}
+
 .sizeIcon{
 	width: 100px;
 	background-color: gray;
