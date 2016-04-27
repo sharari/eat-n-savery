@@ -71,7 +71,7 @@ angular.module('SimpleRESTIonic.controllers', [])
         var vm = this;
 
         function goToBackand() {
-            window.location = 'http://docs.backand.com';
+            window.location = 'http://www.surve.deals';
         }
 
         function getAll() {
@@ -110,7 +110,7 @@ angular.module('SimpleRESTIonic.controllers', [])
         }
 
         function initCreateForm() {
-            vm.newObject = {name: '', description: ''};
+            vm.newObject = {name: '', description: '', cost: ''};
         }
 
         function setEdited(object) {
@@ -234,7 +234,7 @@ angular.module('SimpleRESTIonic.controllers', [])
         }
 
         function initCreateForm() {
-            vm.newObject = {name: '', info: '', socialmedia: '', socialmedia2: ''};
+            vm.newObject = {name: '', info: '', imageurl:'', socialmedia: '', socialmedia2: '',addressstreet:'',addresstate:'',addresszipcode:'',phonenumber:'',businesshours:''};
         }
 
         function setEdited(object) {

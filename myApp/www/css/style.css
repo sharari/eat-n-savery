@@ -185,6 +185,22 @@ margin-top:100px;
 	top: 50px;
 }
 
+.ownerimage{
+	max-height:100px;
+	max-width: 100px;
+}
+.rightalign{
+	float: right;
+	text-align:right;
+	width: 20%;
+}
+.leftalign{
+	float: left;
+	text-align:left;
+	width: 50%;
+	margin: 10px;
+}
+
 /*restaurant_owner.html*/
 .restDescriptionOwner{
   padding: 10px;
