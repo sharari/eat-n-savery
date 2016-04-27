@@ -1,0 +1,28 @@
+<ion-view view-title="Restaurants">
+    <div ng-if="!vm.isCreating && !vm.isEditing">
+        <ion-content class="has-header">
+            <!-- LIST -->
+<!--             <div class="bar bar-header">
+                <span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>
+                 <span ng-click="vm.isCreating = true"><i class='icon ion-plus-round new-item'> Add Item</i></span>
+            </div>
+ -->
+                <div class="restaurant-list" ng-repeat="object in vm.data"
+                     ng-class="{'active':vm.isCurrent(object.id)}" class="restaurant-list" ui-sref="app.restaurant({id : object.id})">
+					 
+                    <div class="item restaurant-item" ng-style="{'background-image': 'url(' + object.imageurl + ')' }" style="height:200px; width:100%; opacity:0.6;">
+
+<!-- 						<div class="restaurant-item" ng-style="{'background-image': 'url(' + restaurant.imageurl + ')' }" style="height:200px; width:100%;">
+ -->
+                        <h2 class="text-center restaurant-name">{{object.name}}</h2>
+                        {{object.socialmedia}}
+                    </div>
+			<!-- 	<div class="restaurant-item" ng-style="{'background-image': 'url(' + object.imageurl + ')' }" style="height:200px; width:100%;">
+								<h3 class="restaurant-name">{{object.name}}</h3>
+							<!--	<img src="{{playlist.imageurl}}" class="image-main" style="height:200px; width:100%;" >-->
+			<!--			</div>
+        -->   
+                </div>
+        </ion-content>
+    </div>
+</ion-view>

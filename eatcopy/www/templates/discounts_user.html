@@ -1,0 +1,30 @@
+<ion-view view-title="Items">
+    <div ng-if="!vm.isCreating && !vm.isEditing">
+        <ion-content class="padding has-header">
+            <!-- LIST -->
+            <!--<div class="">
+                <span><button class="button button-positive" ng-click="vm.goToBackand()">Need Help?</button></span>
+            </div>
+            <div class=" bar-subheader">
+                <div class="list card" ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
+                    <div class="item item-icon-right item-icon-left">
+                        <h2 class="text-center">{{object.name}}</h2>
+                    </div>
+                    <div class="item item-body">
+                        {{object.description}}
+                        image, restaurant name, item cost, description, 
+                    </div>
+                </div>
+            </div>-->
+
+            <div class="list discounts">
+                <div class="item item-thumbnail-left" ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
+                    <img src="img/restaurants/jines.png">
+                    <h2>{{object.name}}</h2><span id="itemDescPrice">${{object.cost}}</span>
+                    <p>Restuarant Name</p>
+                    <p>{{object.expiration}}</p>
+                </div>
+            </div>
+        </ion-content>
+    </div>
+</ion-view>

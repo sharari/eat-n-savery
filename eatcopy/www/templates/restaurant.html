@@ -1,0 +1,75 @@
+<ion-view view-title="{{object.name">
+<!--    <div ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
+ -->        <div><ion-content scroll="false">
+            <div class="map">
+                <div id="map" data-tap-disabled="true"></div>
+            </div>
+        <div class="restDescription">
+            <p><b>{{current.name}}</b><br>658 Park Ave.<br>Rochester, NY 14607<br>
+            	<a onclick="window.open('http://www.jinesrestaurant.com', '_system', 'location=yes'); return false;">www.jinesrestaurant.com</a>
+            </p>
+
+            <div class="button icon-left ion-ios7-telephone button-outline">
+    			<a ng-href="tel: +1-978-470-2608" class="phonecall"><i class="icon ion-ios-telephone"></i> Call</a>
+  			</div>
+
+            <!--<a href="tel:+1-1800-555-5555" class="button button-positive">Call me</a>-->
+            
+            <p>
+                <b>Business Hours:</b>
+                <br>Monday-Saturday: 7AM - 10PM<br>
+                Sunday: 7AM - 8PM<br><br>
+                All day breakfast and Sunday brunch draw crowds to this friendly Greek diner with sidewalk seating
+            </p>
+        </div>
+    </ion-content>
+	
+		<div class="list card" style="top: 450px;">
+			<ion-tabs class="tabs-striped tabs-top tabs-icon-only" delegate-handle="myhandle">
+				<ion-tab title="Daily Discounts">
+					<ion-content class="list card" scroll="false">
+						<div class="item item-body rest-desc">
+							<p class="disccounts">
+								<b>Pancakes</b>
+								<span id="discount">25% off</span>
+								<br>Available until 2PM
+								<br>25 coupons
+							</p>
+						</div>
+
+
+						<div class="item item-body rest-desc">
+							<p class="discounts">
+								<b>Free Coffee with any breakfast</b>
+								<br>Available until 2PM
+								<br>20 coupons
+							</p>
+						</div>
+					</ion-content>
+				</ion-tab>
+
+				<ion-tab title="Promotions">
+					<ion-content class="list card" scroll="false">
+						<div class="item item-body rest-desc">
+							<p class="discounts">
+								<b>Waffles</b>
+								<span id="discount">25% off</span>
+								<br>Available until 2PM
+								<br>25 coupons
+							</p>
+						</div>
+
+						<div class="item item-body rest-desc">
+							<p class="discounts">
+								<b>Free Orange Juice with any breakfast</b>
+								<br>Available until 2PM
+								<br>20 coupons
+							</p>
+					   </div>
+				   </ion-content>
+				</ion-tab>
+			</ion-tabs>
+		</div>
+	</div>
+</div>
+</ion-view>

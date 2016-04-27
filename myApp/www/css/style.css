@@ -108,7 +108,7 @@ ion-content{
 }
 
 .restaurant-name{
-	font-size: xx-large !important;
+	 font-size: xx-large !important;
     color: white !important;
     font-family: 'Pacifico', cursive;
     float: left;
@@ -116,7 +116,7 @@ ion-content{
 }
 
 .restaurant-list .item-content .restaurant-name{
-	font-size: xx-large !important;
+  	font-size: xx-large !important;
     color: white !important;
     font-family: 'Pacifico', cursive;
     float: left;
@@ -154,7 +154,7 @@ ion-content{
     margin: 10px;
 }
 
-/*discouunts_user.html*/
+/*discounts_user.html*/
 #itemDescPrice{
 	float: right;
 	font-weight: bold;
@@ -165,8 +165,19 @@ ion-content{
 .tablething{
 margin-top:100px;
 }
+
 .editlist{
 	position:absolute;
+}
+
+.item-thumbnail-left > img:first-child, .item-thumbnail-left .item-image, .item-thumbnail-left .item-content > img:first-child, .item-thumbnail-left .item-content .item-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 80px;
+    height: 80%;
+    /* max-height: 15px; */
+    width: 100%;
 }
 
 /*discounts_owner.html*/
