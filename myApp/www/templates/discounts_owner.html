@@ -35,13 +35,13 @@
                         <i class="icon ion-close-round" ng-click="vm.delete(object.id)"></i>
                     </div>
                     <div class="item item-body item-icon-left">
+                    <span id="itemDescPrice">${{object.cost}}</span>
 						<div class="leftalign">
-						<img src="img/restaurants/jines.png" class="ownerimage">
-                        {{object.description}}
+						<img src="{{object.imageurl}}" class="ownerimage">
+                        <span class="narrower">{{object.description}}</span>
 						</div>
-						<p class="rightalign">
-							${{object.cost}}
-						</p>
+
+
                     </div>
                 </div>
             </div>
@@ -120,7 +120,7 @@
                                    ng-model="vm.edited.cost"
                                    placeholder="Enter cost">
                         </label>
-                        <label class="item item-input item-stacked-label">
+<!--                         <label class="item item-input item-stacked-label">
                             <span class="input-label">timesensitive</span>
                             <input type="text" class="form-control"
                                    ng-model="vm.edited.timesensitive"
@@ -144,7 +144,7 @@
                                    ng-model="vm.edited.name"
                                    placeholder="Enter Image Name">
                         </label>
-                    </div>
+ -->                    </div>
                     <button class="button button-block button-positive" type="submit">Save</button>
                 </form>
             </div>

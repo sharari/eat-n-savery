@@ -19,9 +19,9 @@
 
             <div class="list discounts">
                 <div class="item item-thumbnail-left" ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
-                    <img src="img/restaurants/jines.png">
+                    <img src="{{object.imageurl}}">
                     <h2>{{object.name}}</h2><span id="itemDescPrice">${{object.cost}}</span>
-                    <p>Restuarant Name</p>
+                    <h3>{{object.rest}}</h3>
                     <p>{{object.expiration}}</p>
                 </div>
             </div>

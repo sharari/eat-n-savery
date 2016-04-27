@@ -53,9 +53,11 @@ angular.module('SimpleRESTIonic.controllers', [])
 			// console.log("post change" + isLoggedIn);
         }
         function signout() {
+					console.log("test");
             LoginService.signout()
                 .then(function () {
                     //$state.go('tab.login');
+					$rootScope.isAdmin = false;
                     $rootScope.$broadcast('logout');
                     $state.go($state.current, {}, {reload: true});
                 })

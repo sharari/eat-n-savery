@@ -455,3 +455,7 @@ body {
 #meetourteam{
 	background-color: #97DBCC;
 }
+.narrower{
+	width: 40%;
+	margin-left: 15px;
+}
