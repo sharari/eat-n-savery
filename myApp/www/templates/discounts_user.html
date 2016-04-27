@@ -20,9 +20,12 @@
             <div class="list discounts">
                 <div class="item item-thumbnail-left" ng-repeat="object in vm.data" ng-class="{'active':vm.isCurrent(object.id)}">
                     <img src="{{object.imageurl}}">
-                    <h2>{{object.name}}</h2><span id="itemDescPrice">${{object.cost}}</span>
-                    <h3>{{object.rest}}</h3>
-                    <p>{{object.expiration}}</p>
+                    <span id="itemDescPrice">${{object.cost}}</span>
+                    <h2>{{object.name}}</h2>
+					<h3>{{object.rest}}</h3>
+                    <p>{{object.description}}</p>
+<!--                     <h3>{{object.restaurantname.restaurants.name}}</h3>
+ -->                    <p>{{object.expiration}}</p>
                 </div>
             </div>
         </ion-content>
